@@ -6,7 +6,7 @@ let year = date.getFullYear();
 
 console.log(year);
 
-// class and id referencexs same as css
+// class and id references same as css
 document.querySelector('.year').textContent = year;
 
 let current_date = document.lastModified;
