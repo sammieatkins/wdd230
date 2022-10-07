@@ -1,0 +1,24 @@
+nav {
+    background-color: #538966;
+}
+nav button {
+    margin: .2rem .2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+}
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem .2vw;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+nav ul li a:hover {
+    /* add white box border thing */
+}
