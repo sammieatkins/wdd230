@@ -9,5 +9,7 @@ datefieldUK.innerHTML = `${fulldateUK}`;
 
 // menu click event
 function toggleMenu() {
-    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+    document.getElementById("primaryNav").classList.toggle("open");
 }
+const x = getElementById("hamburgerBtn");
+x.onclick = toggleMenu;

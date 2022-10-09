@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Quicksand:wght@400;700&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
+}
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+    margin: 0 auto;
+    display: block;
+}
+#logo_link {
+    margin: 0 auto;
+}
+
+/* nav nonsense */
 nav {
     background-color: #538966;
 }
@@ -19,6 +43,14 @@ nav ul li a {
     color: white;
     border-top: 1px solid rgba(0,0,0,0.5);
 }
-nav ul li a:hover {
-    /* add white box border thing */
+nav ul li.active a{
+    background-color: white;
+    color: #538966;
 }
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+    border: black solid 5px;
+}
+nav ul {display:none;}
+nav ul.open {display: block;}
