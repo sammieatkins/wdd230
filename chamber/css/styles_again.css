@@ -10,38 +10,63 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 10px;
 }
-
 .logo {
-    width: 20%;
+    width: 40%;
     margin: 0 auto;
     display: block;
+    
 }
 #logo_link {
     margin: 0 auto;
 }
+.socials {
+    text-decoration: none;
+    color: #538966;
+    font-size: 2em;
+    padding-right: 10px;
+}
+#content {
+    background-color: white;
+    border: black solid 5px;
+    /* padding: 10px; */
+}
+.date {
+    background-color: #538966;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 10px;
+    border-top: black solid 5px;
+    border-bottom: black solid 5px;
+    text-align: center;
+}
+.categories {
+    padding: 0px 10px 0px 10px;
+}
 
 /* nav nonsense */
-nav {
-    background-color: #538966;
-}
-nav button {
+nav button{
     margin: .2rem .2vw;
     background: transparent;
     border: none;
     font-size: 2rem;
+}
+nav button a i {
+    color: #538966;
 }
 nav ul {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
 }
-nav ul li a {
+nav ul li a{
     display: block;
     padding: .8rem .2vw;
     text-decoration: none;
     color: white;
-    border-top: 1px solid rgba(0,0,0,0.5);
+    /* border-top: 1px solid rgba(0,0,0,0.5); */
+    font-family: 'Fjalla One', sans-serif;
 }
 nav ul li.active a{
     background-color: white;
