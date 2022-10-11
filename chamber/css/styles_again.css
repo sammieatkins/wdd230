@@ -16,7 +16,6 @@ header {
     width: 40%;
     margin: 0 auto;
     display: block;
-
 }
 #logo_link {
     margin: 0 auto;
@@ -44,6 +43,7 @@ header {
     border-top: black solid 5px;
     border-bottom: black solid 5px;
     text-align: center;
+    font-size: 1.2em;
 }
 .categories {
     padding: 10px 10px 0px 10px;
@@ -57,21 +57,28 @@ header {
     border: black solid 5px;
     margin: 10px;
 }
+#footer_logo {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
 
 
 /* nav nonsense */
 nav button{
-    margin: .2rem .2vw;
+    /* margin: .2rem .2vw; */
     background: transparent;
     border: none;
     font-size: 2rem;
+    /* position: absolute; */
+    margin: 10px 0px 0px 10px;
 }
 nav button a i {
     color: #538966;
 }
 nav ul {
     list-style-type: none;
-    padding-left: 0;
+    /* padding-top: 55px; */
     margin: 0;
 }
 nav ul li a{
@@ -80,6 +87,7 @@ nav ul li a{
     text-decoration: none;
     color: white;
     font-family: 'Fjalla One', sans-serif;
+    padding-left: 15px;
 }
 nav ul li.active a{
     background-color: white;
@@ -90,5 +98,209 @@ nav ul li a:hover {
     color: black;
     border: black solid 5px;
 }
-nav ul {display:none;}
-nav ul.open {display: block;}
+nav ul {display: none;}
+nav ul.open {
+    display: block;
+    padding-left: 0px;
+}
+footer {
+    border-top: black solid 5px;
+    margin-top: 5px;
+}
+footer p {
+    text-align: center;
+    font-family: "quicksand", sans-serif;
+}
+#contact {
+    border-top: black solid 5px;
+    margin: 10px 0 10px 0;
+}
+.footer_contact {
+    font-family: "quicksand", sans-serif;
+    font-weight: bold;
+}
+#bottom {
+    background-color: #538966;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    border-top: solid black 5px;
+}
+#join {
+    display: none;
+}
+
+@media only screen and (min-width: 35rem) {
+    .socials {
+        font-size: 4em;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .date {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    #hero {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    #news {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .spotlight_div {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    #join {
+        display: block;
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    #event {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    #weather {
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .logo {
+        margin: auto;
+    }
+    #footer_logo {
+        grid-column: 1/2;
+        width: 100%;
+        margin: 0;
+    }
+    #contact {
+        grid-column: 2/3;
+        margin: 0;
+        border-top: none;
+        border-bottom: none;
+    }
+    #bottom {
+        grid-column: 1/3;
+    }
+}
+
+@media (min-width: 64em) {
+    #content {
+        margin: 0 15%;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        padding: 0;
+    }
+    #logo_link {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #nav_logo {
+        width: 80%;
+        margin: 0 auto;
+    }
+    nav ul li {
+        justify-content: space-evenly;
+    }
+    #socials_icons {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .socials{
+        padding-right: 0px;
+    }
+    nav button {display: none;}
+    nav ul#primaryNav {
+        display: flex;
+        margin-left: 2vw;
+        justify-content: space-evenly;
+    }
+    nav {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-family: 'Fjalla One', sans-serif;   
+        background-color: #538966;
+        padding: 10px;
+        letter-spacing: .2em;
+        border: black solid 5px;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border: 5px solid rgba(0, 0, 0, 0);
+    }
+    nav ul li.active a {
+        background-color: #538966;
+        color: white;
+    }
+    nav ul li a {
+        padding: 10px;
+    }
+    nav ul li a:hover {
+        padding: 10px;
+        background-color: white;
+        border: 5px solid rgba(0, 0, 0);
+        color: black;
+    }
+    .date {
+        font-family: 'Fjalla One', sans-serif;
+        padding: 10px;
+        border-top: black solid 5px;
+        border-bottom: black solid 5px;
+        text-align: center;
+    }
+    nav ul#primaryNav {
+        margin: 0;
+        padding: 0;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        border-top: black solid 5px;
+    }
+    #footer_logo {
+        grid-column: 1/2;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-self: auto;
+    }
+    #contact {
+        border-top: none;
+        border-bottom: none;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+    .footer_contact {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .footer_address {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #bottom {
+        grid-column: 1/3;
+    }
+}

@@ -15,17 +15,17 @@
     <div id="content">
         <header>
             <nav>
-                <button id="hamburgerBtn"><a href="" onclick="toggleMenu()"><i class="fa-solid fa-bars menu" ></i></a></button>
+                <button id="hamburgerBtn"><a href="#" onclick="toggleMenu()"><i class="fa-solid fa-bars menu" ></i></a></button>
                 <ul id="primaryNav">
-                    <li class="active"><a href="index.html">HOME</a></li>
-                    <li class="active"><a href="discover.html">DISCOVER</a></li>
-                    <li class="active"><a href="directory.html">DIRECTORY</a></li>
-                    <li class="active"><a href="join.html">JOIN</a></li>
-                    <li class="active"><a href="contact.html">CONTACT</a></li>
+                    <li class="active nav_links"><a href="index.html">HOME</a></li>
+                    <li class="active nav_links"><a href="discover.html">DISCOVER</a></li>
+                    <li class="active nav_links"><a href="directory.html">DIRECTORY</a></li>
+                    <li class="active nav_links"><a href="join.html">JOIN</a></li>
+                    <li class="active nav_links"><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
             <a id="logo_link" href="index.html">
-                <img class="logo" src="images/stl-commerce-logo2.png" alt="St. Louis Chamber of Commerce Logo">
+                <img class="logo" id="nav_logo" src="images/stl-commerce-logo2.png" alt="St. Louis Chamber of Commerce Logo">
             </a>
             <div id="socials_icons">
                 <a href="https://facebook.com" target="_blank" class="socials"><i class="fa-brands fa-facebook-square"></i></a>   
@@ -33,19 +33,32 @@
             </div>
         </header>
         <main>
-            <div class="date"></div> 
-            <h2 class="categories">Hero with site name and call to action</h2>
-            <h2 class="categories">Event</h2>
-            <h2 class="categories">Weather</h2>
-            <h2 class="categories">News Release</h2>
+            <div class="date"></div>
+            <h2 class="categories" id="hero">Hero with site name and call to action</h2>
+            <h2 class="categories" id="join">Join</h2>
+            <h2 class="categories" id="event">Event</h2>
+            <h2 class="categories" id="weather">Weather</h2>
+            <h2 class="categories" id="news">News Release</h2>
             <div class="spotlight_div">
                 <h2 class="categories">Spotlight 1</h2>
                 <h2 class="categories">Spotlight 2</h2>
             </div>
-
         </main>
         <footer>
-
+            <a id="footer_logo" href="index.html">
+                <img class="logo" src="images/stl-commerce-logo2.png" alt="St. Louis Chamber of Commerce Logo">
+            </a>
+            <div id="contact">
+                <div class="footer_address">
+                    <p>20 Strawberry Lane</p>
+                    <p>St. Louis, MO 63043</p>
+                </div>
+                <div class="footer_contact">
+                    <p>info@stlchamberofcommerce.org</p>
+                    <p>314-123-4567</p>
+                </div>
+            </div>
+            <p id="bottom">STL Chamber of Commerce | WDD 230 Project | Samantha Atkins | &copy; 2022 | Last Updated: <span class="updated"></span></p>
         </footer>
     </div> 
 </body>
