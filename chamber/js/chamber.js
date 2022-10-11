@@ -7,16 +7,17 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).forma
 
 datefieldUK.innerHTML = `${fulldateUK}`;
 
-// menu click event
-function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
-}
-const x = getElementById("hamburgerBtn");
-x.onclick = toggleMenu;
-
 // footer last updated
 let current_date = document.lastModified;
 
 console.log(current_date);
 
 document.querySelector('.updated').textContent = current_date;
+
+// menu click event
+function toggleMenu() {
+    document.getElementById("primaryNav").classList.toggle("open");
+}
+const x = querySelector("#hamburgerBtn");
+x.onclick = toggleMenu;
+
