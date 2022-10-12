@@ -18,6 +18,6 @@ document.querySelector('.updated').textContent = current_date;
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
 }
-const x = querySelector("#hamburgerBtn");
+const x = document.querySelector("#hamburgerBtn");
 x.onclick = toggleMenu;
 
