@@ -21,3 +21,11 @@ function toggleMenu() {
 const x = document.querySelector("#hamburgerBtn");
 x.onclick = toggleMenu;
 
+// 
+const parent = querySelector("#msg_box");
+
+if (now.getDate() == 1 || now.getDate() == 2) {
+    document.querySelector
+    style.display = "block";
+}
+
