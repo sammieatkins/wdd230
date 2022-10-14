@@ -18,14 +18,13 @@ document.querySelector('.updated').textContent = current_date;
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
 }
-const x = document.querySelector("#hamburgerBtn");
+const x = querySelector("#hamburgerBtn");
 x.onclick = toggleMenu;
 
-// 
-const parent = querySelector("#msg_box");
+// message
+const parent = document.querySelector(".msg_box");
 
-if (now.getDate() == 1 || now.getDate() == 2) {
-    document.querySelector
-    style.display = "block";
+if (now.getDay() == 1 || now.getDay() == 2) {
+    parent.style.display = "block";
 }
 

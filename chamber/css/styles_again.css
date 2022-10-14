@@ -62,7 +62,9 @@ header {
     margin: 0 auto;
     display: block;
 }
-
+.msg_box {
+    display: none;
+}
 
 /* nav nonsense */
 nav button{
@@ -73,7 +75,7 @@ nav button{
     /* position: absolute; */
     margin: 10px 0px 0px 10px;
 }
-nav button a i {
+nav button {
     color: #185B31;
 }
 nav ul {
