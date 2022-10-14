@@ -64,6 +64,13 @@ header {
 }
 .msg_box {
     display: none;
+    font-family: "fjalla one", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+    border: black solid 5px;
+    color: white;
+    background-color: #185B31;
 }
 
 /* nav nonsense */

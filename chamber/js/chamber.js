@@ -14,6 +14,13 @@ console.log(current_date);
 
 document.querySelector('.updated').textContent = current_date;
 
+// message
+const parent = document.querySelector(".msg_box");
+
+if (now.getDay() == 1 || now.getDay() == 5) {
+    parent.style.display = "block";
+}
+
 // menu click event
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
@@ -21,10 +28,4 @@ function toggleMenu() {
 const x = querySelector("#hamburgerBtn");
 x.onclick = toggleMenu;
 
-// message
-const parent = document.querySelector(".msg_box");
-
-if (now.getDay() == 1 || now.getDay() == 2) {
-    parent.style.display = "block";
-}
 
