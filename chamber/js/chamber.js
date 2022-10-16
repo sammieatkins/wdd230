@@ -17,7 +17,7 @@ document.querySelector('.updated').textContent = current_date;
 // message
 const parent = document.querySelector(".msg_box");
 
-if (now.getDay() == 1 || now.getDay() == 5) {
+if (now.getDay() == 1 || now.getDay() == 2) {
     parent.style.display = "block";
 }
 
