@@ -1,0 +1,123 @@
+@media (min-width: 64em) {
+    #content {
+        margin: 0 15%;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        padding: 0;
+    }
+    .msg_box {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        /* margin-top: 10px; */
+        border: none;
+        /* border-top: solid black 5px; */
+        border-bottom: solid black 5px;
+    }
+    #logo_link {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #nav_logo {
+        width: 80%;
+        margin: 0 auto;
+    }
+    nav ul li {
+        justify-content: space-evenly;
+    }
+    #socials_icons {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .socials{
+        padding-right: 0px;
+        font-size: 3em;
+    }
+    nav button {display: none;}
+    nav ul#primaryNav {
+        display: flex;
+        margin-left: 2vw;
+        justify-content: space-evenly;
+    }
+    nav {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-family: 'Fjalla One', sans-serif;   
+        background-color: #185B31;
+        padding: 10px;
+        letter-spacing: .2em;
+        border: black solid 5px;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border: 5px solid rgba(0, 0, 0, 0);
+    }
+    #button {
+        display: none;
+    }
+    nav ul li.active a {
+        background-color: #185B31;
+        color: white;
+        font-size: 1em;
+    }
+    nav ul li a {
+        padding: 10px;
+    }
+    nav ul li a:hover {
+        padding: 10px;
+        background-color: white;
+        border: 5px solid rgba(0, 0, 0);
+        color: black;
+    }
+    .date {
+        font-family: 'Fjalla One', sans-serif;
+        padding: 10px;
+        border-top: black solid 5px;
+        border-bottom: black solid 5px;
+        text-align: center;
+    }
+    nav ul#primaryNav {
+        margin: 0;
+        padding: 0;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        border-top: black solid 5px;
+    }
+    #footer_logo {
+        grid-column: 1/2;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-self: auto;
+    }
+    #contact {
+        border-top: none;
+        border-bottom: none;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+    .footer_contact {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .footer_address {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #bottom {
+        grid-column: 1/3;
+    }
+}

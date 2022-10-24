@@ -77,51 +77,33 @@ header {
 #hero {
     padding: 0;
     border: none;
+    position: relative;
 }
 #hero_img {
-    width: 90%;
-    padding: 10px;
+    /* padding: 10px; */
+    /* margin: 10px 0px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: black solid 5px;
+    box-sizing: border-box;
     
     /* padding-bottom: 15px; */
 }
-/* WEATHER */
-.weather {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 10px;
-}
-.weather h2 {
-    margin: 10px;
-    grid-column: 1/5;
-}
-#weather_icon {
-    grid-column: 1/2;
-    font-size: 3em;
-    padding: 5px;
-    color: #185B31;
-}
-.weather p {
-    margin: 5px;
-    font-size: 1.3em;
-}
-#degrees {
-    grid-column: 2/3;
-    font-size: 2em;
-    justify-self: center;
-}
-#weather_text {
-    grid-column: 1/3;
-    grid-row: 3/4;
-}
-#speed {
-    grid-column: 3/5;
-    grid-row: 2/3;
-    justify-self: center;
-}
-#chill {
-    grid-column: 3/5;
-    grid-row: 3/4;
-    justify-self: center;
+#join_button {
+    background-color: #185B31;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: .1em;
+    font-size: .7em;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid white 5px;
+    text-decoration: none;
+    padding: 10px 15px;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
 }
 .spotlight_div {
     padding: 10px;
@@ -207,207 +189,43 @@ footer p {
     display: none;
 }
 
-@media only screen and (min-width: 35rem) {
-    .socials {
-        font-size: 4em;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        padding: 0 10px 10px 0;
-        padding-bottom: 10px;
-    }
-    .logo {
-        width: 50%;
-    }
-    #socials_icons {
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-    #hamburgerBtn {
-        margin: 0 0 0 10px;
-        font-size: 4em;
-    }
-    main {
+
+    /* WEATHER */
+    /* .weather {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 10px;
     }
-    .date {
-        grid-column: 1/3;
-        grid-row: 1/2;
+    .weather h2 {
+        margin: 10px;
+        grid-column: 1/5;
     }
-    #hero {
-        grid-column: 1/3;
-        grid-row: 2/3;
+    #weather_icon {
+        grid-column: 1/2;
+        font-size: 3em;
+        padding: 5px;
+        color: #185B31;
     }
-    #news {
+    .weather p {
+        margin: 5px;
+        font-size: 1.3em;
+    }
+    #degrees {
+        grid-column: 2/3;
+        font-size: 2em;
+        justify-self: center;
+    }
+    #weather_text {
         grid-column: 1/3;
         grid-row: 3/4;
     }
-    .spotlight_div {
-        grid-column: 1/3;
-        grid-row: 4/5;
-    }
-    #join {
-        display: block;
-        grid-column: 1/3;
-        grid-row: 5/6;
-    }
-    #event {
-        grid-column: 1/3;
-        grid-row: 6/7;
-    }
-    #weather {
-        grid-column: 2/3;
-        grid-row: 6/7;
-    }
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .logo {
-        margin: auto;
-    }
-    #footer_logo {
-        grid-column: 1/2;
-        width: 100%;
-        margin: 0;
-    }
-    #contact {
-        grid-column: 2/3;
-        margin: 0;
-        border-top: none;
-        border-bottom: none;
-    }
-    #bottom {
-        grid-column: 1/3;
-    }
-    nav ul li.active a {
-        font-size: 2em;
-    }
-}
-
-
-
-@media (min-width: 64em) {
-    #content {
-        margin: 0 15%;
-    }
-    header {
-        display: grid;
-        grid-template-columns: 1fr 4fr 1fr;
-        padding: 0;
-    }
-    .msg_box {
-        grid-column: 1/4;
-        grid-row: 1/2;
-        /* margin-top: 10px; */
-        border: none;
-        /* border-top: solid black 5px; */
-        border-bottom: solid black 5px;
-    }
-    #logo_link {
-        grid-column: 1/2;
+    #speed {
+        grid-column: 3/5;
         grid-row: 2/3;
+        justify-self: center;
     }
-    #nav_logo {
-        width: 80%;
-        margin: 0 auto;
-    }
-    nav ul li {
-        justify-content: space-evenly;
-    }
-    #socials_icons {
-        grid-column: 3/4;
-        grid-row: 2/3;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .socials{
-        padding-right: 0px;
-        font-size: 3em;
-    }
-    nav button {display: none;}
-    nav ul#primaryNav {
-        display: flex;
-        margin-left: 2vw;
-        justify-content: space-evenly;
-    }
-    nav {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        font-family: 'Fjalla One', sans-serif;   
-        background-color: #185B31;
-        padding: 10px;
-        letter-spacing: .2em;
-        border: black solid 5px;
-    }
-    nav a {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        padding: 10px;
-        border: 5px solid rgba(0, 0, 0, 0);
-    }
-    #button {
-        display: none;
-    }
-    nav ul li.active a {
-        background-color: #185B31;
-        color: white;
-        font-size: 1em;
-    }
-    nav ul li a {
-        padding: 10px;
-    }
-    nav ul li a:hover {
-        padding: 10px;
-        background-color: white;
-        border: 5px solid rgba(0, 0, 0);
-        color: black;
-    }
-    .date {
-        font-family: 'Fjalla One', sans-serif;
-        padding: 10px;
-        border-top: black solid 5px;
-        border-bottom: black solid 5px;
-        text-align: center;
-    }
-    nav ul#primaryNav {
-        margin: 0;
-        padding: 0;
-    }
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        border-top: black solid 5px;
-    }
-    #footer_logo {
-        grid-column: 1/2;
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        justify-self: auto;
-    }
-    #contact {
-        border-top: none;
-        border-bottom: none;
-        margin: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-top: 10px;
-        font-weight: bold;
-    }
-    .footer_contact {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .footer_address {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    #bottom {
-        grid-column: 1/3;
-    }
-}
+    #chill {
+        grid-column: 3/5;
+        grid-row: 3/4;
+        justify-self: center;
+    } */
