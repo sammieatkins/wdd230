@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="St. Louis Chamber of Commerce - Samantha Atkins - WDD 230">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/styles_again.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/chamber.js"></script>
+    <title>STL Chamber | Discover</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div class="msg_box">Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+            <nav>
+                <a id="button" href="#" onclick="toggleMenu()"><button id="hamburgerBtn"><i class="fa-solid fa-bars menu"></i></button></a>
+                <ul id="primaryNav">
+                    <li class="active nav_links"><a href="index.html">HOME</a></li>
+                    <li class="active nav_links"><a href="discover.html">DISCOVER</a></li>
+                    <li class="active nav_links"><a href="directory.html">DIRECTORY</a></li>
+                    <li class="active nav_links"><a href="join.html">JOIN</a></li>
+                    <li class="active nav_links"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <a id="logo_link" href="index.html">
+                <img class="logo" id="nav_logo" src="images/stl-commerce-logo.png" alt="St. Louis Chamber of Commerce Logo">
+            </a>
+            <div id="socials_icons">
+                <a href="https://facebook.com" target="_blank" class="socials"><i class="fa-brands fa-facebook-square"></i></a>   
+                <a href="https://linkedin.com" target="_blank" class="socials"><i class="fa-brands fa-linkedin"></i></a>    
+            </div>
+        </header>
+        <main>
+            <div class="date"></div>
+            <h1 id="visitMessage">Days since last visit: <span id="daysSince"></span></h1>
+            <div class="pictures">
+                <div class="fair">
+                    <picture>
+                        <!-- src="https://dummyimage.com/300x200/ccc/fff" data- -->
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/1904_world's_fair.jpeg" alt="1904 World's Fair">
+                    </picture>
+                    <p>Fun fact: The 1904 World's Fair was in St. Louis.</p>  
+                </div>
+                <div class="art">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/art_museum.jpeg" alt="St. Louis Art Museum">
+                    </picture>              
+                    <p>The St. Louis Art Museum</p>
+                </div>
+                <div class="stadium">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/busch_stadium.jpeg" alt="Busch Stadium">
+                    </picture>
+                    <p>Busch Stadium is where fans come to see the St. Louis Cardinals play baseball.</p>
+                </div>
+                <div class="butterfly">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/butterfly_house.jpeg" alt="Sophia M. Sachs Butterfly House">
+                    </picture>
+                    <p>The Sophia M. Sachs Butterfly House is a butterfly zoo operated by the Missouri Botanical Gardens, and located in Faust Park in Chesterfield, Missouri, United States.</p>
+                </div>
+                <div class="basilica">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/Cathedral_Basilica_of_Saint_Louis_(St._Louis,_MO)_-_exterior,_quarter_view_2.jpg" alt="Cathedral Basilica of St. Louis">
+                    </picture>
+                    <p>The Cathedral Basilica of St. Louis</p>
+                </div>
+                <div class="museum">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/city_museum.jpeg" alt="City Museum">
+                    </picture>
+                    <p>The City Museum</p>
+                </div>
+                <div class="fitz">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/fitz.jpeg" alt="Fitz's Root Beer">
+                    </picture>
+                    <p>Fitz's Root Beer</p>
+                </div>
+                <div class="science">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/science_center.jpeg" alt="St. Louis Science Center">
+                    </picture>
+                    <p>St. Louis Science Center</p>
+                </div>
+                <div class="zoo">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/zoo.jpeg" alt="St. Louis Zoo">
+                    </picture>
+                    <p>St. Louis Zoo</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a id="footer_logo" href="index.html">
+                <img class="logo" src="images/stl-commerce-logo.png" alt="St. Louis Chamber of Commerce Logo">
+            </a>
+            <div id="contact">
+                <div class="footer_address">
+                    <p>20 Strawberry Lane</p>
+                    <p>St. Louis, MO 63043</p>
+                </div>
+                <div class="footer_contact">
+                    <p>info@stlchamberofcommerce.org</p>
+                    <p>314-123-4567</p>
+                </div>
+            </div>
+            <p id="bottom">STL Chamber of Commerce | WDD 230 Project | Samantha Atkins | &copy; 2022 | Last Updated: <span class="updated"></span></p>
+        </footer>
+    </div> 
+</body>
+</html>

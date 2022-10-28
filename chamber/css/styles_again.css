@@ -80,15 +80,12 @@ header {
     position: relative;
 }
 #hero_img {
-    /* padding: 10px; */
-    /* margin: 10px 0px; */
+    padding: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border: black solid 5px;
     box-sizing: border-box;
-    
-    /* padding-bottom: 15px; */
 }
 #join_button {
     background-color: #185B31;
@@ -187,6 +184,25 @@ footer p {
 }
 #join {
     display: none;
+}
+
+/* DISCOVER */
+.pictures {
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 20px; */
+}
+picture img {
+    display: block;
+    width: 90%;  
+    margin: 0 auto;  
+}
+.pictures p {
+    text-align: center;
+    padding: 0px 10px;
+}
+#visitMessage {
+    text-align: center;
 }
 
 

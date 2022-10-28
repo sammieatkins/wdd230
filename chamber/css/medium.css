@@ -90,4 +90,34 @@
         right: 20px;
         bottom: 20px;
     }
+
+    /* DISCOVER */
+    #visitMessage {
+        grid-column: 1/3;
+    }
+    .pictures {
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* padding-top: 10px; */
+    }
+    /* does it count as optimization if I set the width and height? */
+    picture img {
+        height: 150px;
+    }
+    .pictures p {
+        text-align: center;
+        /* grid-row: 2/3; */
+        padding: 0px 10px;
+    }
+    .fair {
+        grid-column: 1/2;
+    }
+    .art {
+        grid-column: 2/3;
+    }
+    .butterfly {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
 }

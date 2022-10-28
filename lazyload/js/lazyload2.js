@@ -1,20 +1,5 @@
 const image = document.querySelectorAll('img');
 
-// const io = new IntersectionObserver (
-// (entries, io) => {
-// entries.forEach(entry => {
-// console.log(entries);
-// })
-// },
-// {
-// threshold: [.5]
-// }
-// );
-
-// image.forEach(image => {
-// io.observe(image);
-// })
-
 const pimages = document.querySelectorAll('[data-src]');
 const options = {
 threshold: 1,
@@ -62,7 +47,6 @@ io.observe(image);
 let currDate = Date.now();
 // let currDate = new Date("2022-03-24");
 console.log(currDate);
-// let visitDate = localStorage.setItem("visitDate", currDate);
 
 let visitMessage = document.querySelector("#visitMessage");
 let daysSince = document.querySelector("#daysSince");
