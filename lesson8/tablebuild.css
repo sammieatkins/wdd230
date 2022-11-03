@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Fjalla+One&family=Quicksand:wght@400;700&family=Titan+One&family=Ubuntu&display=swap');
+body {
+    font-family: "Ubuntu", "sans-serif";
+    text-align: center;
+}
+thead th {
+    font-size: 2em;
+}
+tfoot td {
+    font-size: .8em;
+}
+thead th, tfoot td {
+    background-color: rgb(111, 211, 119);
+}
+td, th {
+    padding: 5px;
+    border: 1px solid black;
+}
+table {
+    width: 80%;
+    margin: 0 auto;
+}
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tbody tr:nth-child(6) {
+    font-style: italic;
+}
+tbody tr:nth-child(1) {
+    background-color: rgb(103, 160, 91);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#highlight {
+    background-color: rgb(103, 160, 91);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+tr:nth-child(odd) {
+    background-color: #ccc;
+}
+tr:nth-child(even) {
+    background-color: rgb(233, 231, 231);
+}
+
+@media (min-width: 64em) {
+    table {
+        width: 600px;
+    }
+}

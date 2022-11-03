@@ -1,0 +1,21 @@
+/* tr:nth-child(odd) {
+    background-color: #ccc;
+} */
+thead th, tfoot td {
+    background-color: pink;
+}
+td, th {
+    padding: 5px;
+    border: 1px solid black;
+}
+/* table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+} */
+tbody tr:nth-child(3), td:first-child {
+    font-style: italic;
+}
+table {
+    width: 600px;
+    margin: 0 auto;
+}
