@@ -1,7 +1,10 @@
 @media (min-width: 64em) {
-    #content {
+    body {
         margin: 0 15%;
     }
+    /* #content {
+        margin: 0 15%;
+    } */
     header {
         display: grid;
         grid-template-columns: 1fr 4fr 1fr;
