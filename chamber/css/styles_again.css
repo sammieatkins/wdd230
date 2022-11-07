@@ -179,7 +179,7 @@ footer p {
     font-weight: bold;
     border-top: solid black 5px;
 }
-#join {
+.join {
     display: none;
 }
 
@@ -204,10 +204,6 @@ picture img {
 /* JOIN */
 #join {
     border: black solid 5px;
-}
-#join main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 form {
     margin: 40px;
@@ -242,7 +238,7 @@ textarea {
     font-family: "quicksand", sans-serif;
     display: block;
     height: 150px;
-    width: 400px;
+    width: 260px;
     border: solid black 5px;
 }
 #radio label, input {

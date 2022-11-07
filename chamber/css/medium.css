@@ -120,4 +120,13 @@
         grid-column: 1/2;
         grid-row: 3/4;
     }
+
+    /* JOIN */
+    #join main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    textarea {
+        width: 400px;
+    }
 }
