@@ -1,0 +1,88 @@
+{
+    "businesses": [
+      {
+        "name": "Fitz's Root Beer",
+        "address": "6605 Delmar Blvd St Louis, MO 63130",
+        "phone": "314-726-9555",
+        "website": "https://fitzsrootbeer.com/",
+        "logo": "fitzs_logo.png"
+      },
+      {
+        "name": "Build-A-Bear Workshop",
+        "address": "415 S 18th St Suite 102, St. Louis, MO 63103",
+        "phone": "314-266-1794",
+        "website": "buildabear.com",
+        "logo": "buildabear_logo.png"
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "logo": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "logo": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "logo": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "logo": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "logo": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "logo": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "logo": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "logo": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "logo": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "logo": ""
+      }
+    ]
+  }

@@ -271,6 +271,10 @@ form p {
     grid-template-columns: 1fr;
 }
 
+/* DIRECTORY */
+#directory {
+    border: black solid 5px;
+}
 
 
 

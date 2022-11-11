@@ -35,4 +35,13 @@ function displayProphets(item) {
     card.appendChild(img);
     
     document.querySelector(".cards").appendChild(card);
+
+
+    // HOW TO REMOVE
+    // -- put all cards in a div and hide that
+    // -- remove other thing first, then display new
+    // card.style.display = "none";
+    card.forEach((item) => {
+        item.remove();
+    })
 }
