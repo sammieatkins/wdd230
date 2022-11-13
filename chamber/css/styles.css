@@ -275,6 +275,10 @@ form p {
 #directory {
     border: black solid 5px;
 }
+#directory main {
+    display: block;
+}
+
 
 
 

@@ -11,78 +11,78 @@
         "name": "Build-A-Bear Workshop",
         "address": "415 S 18th St Suite 102, St. Louis, MO 63103",
         "phone": "314-266-1794",
-        "website": "buildabear.com",
+        "website": "https://buildabear.com",
         "logo": "buildabear_logo.png"
       },
       {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "logo": ""
+        "name": "Bayer",
+        "address": "800 N Lindbergh Blvd, Creve Coeur, MO 63141",
+        "phone": "314-694-1000",
+        "website": "https://www.bayer.com/en/",
+        "logo": "bayer_logo.png"
       },
       {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "logo": ""
+        "name": "Energizer Holdings, Inc.",
+        "address": "533 Maryville University Dr, St. Louis, MO 63141",
+        "phone": "314-985-2000",
+        "website": "https://www.energizerholdings.com/",
+        "logo": "energizerholdings_logo.jpeg"
       },
       {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "logo": ""
+        "name": "Schnucks",
+        "address": "11420 Lackland Rd, St. Louis, MO 63146",
+        "phone": "314-994-9900",
+        "website": "https://nourish.schnucks.com/",
+        "logo": "schnucks_logo.png"
       },
       {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "logo": ""
+        "name": "BJC Healthcare",
+        "address": "4901 Forest Park AveSt. Louis, MO 63108",
+        "phone": "314-362-9355",
+        "website": "https://www.bjc.org/",
+        "logo": "bjchealthcare_logo"
       },
       {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "logo": ""
+        "name": "Ameren",
+        "address": "1901 Chouteau Ave, St. Louis, MO 63103",
+        "phone": "314-621-3222",
+        "website": "https://www.ameren.com/missouri/",
+        "logo": "ameren_logo.png"
       },
       {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "logo": ""
+        "name": "Goodwill",
+        "address": "3728 Market St, St. Louis, MO 63110",
+        "phone": "314-531-1062",
+        "website": "https://mersgoodwill.org/",
+        "logo": "goodwill_logo.png"
       },
       {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "logo": ""
+        "name": "Edward Jones",
+        "address": "12555 Manchester Rd, St. Louis, MO 63131",
+        "phone": "314-515-2000",
+        "website": "https://www.edwardjones.com/us-en",
+        "logo": "edwardjones_logo.png"
       },
       {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "logo": ""
+        "name": "Nestlé Purina PetCare Company",
+        "address": "801 Chouteau Ave, St. Louis, MO 63102, USA",
+        "phone": "+1 314-982-1000",
+        "website": "https://www.purina.com/",
+        "logo": "purina_logo.png"
       },
       {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "logo": ""
+        "name": "Anheuser Busch",
+        "address": "5755 S Yellowstone Hwy, Idaho Falls, ID 83402",
+        "phone": "209-524-1080",
+        "website": "https://www.anheuser-busch.com/",
+        "logo": "anheuserbusch_logo.png"
       },
       {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "website": "",
-        "logo": ""
+        "name": "Panera Bread",
+        "address": "3630 S. Geyer RdSuite 100 St Louis, Missouri USA",
+        "phone": "1 (855) 372-6372",
+        "website": "https://www.panerabread.com/en-us/home.html",
+        "logo": "panera_logo.png"
       }
     ]
   }
