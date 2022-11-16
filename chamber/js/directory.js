@@ -11,14 +11,26 @@ async function getBusinesses(requestURL) {
         console.log(jsObject);
         const businesses = jsObject["businesses"];
         console.log(businesses);
-        prophets.forEach(displayBusinesses)
     }
 };
 
 getBusinesses(requestURL);
 
-function displayBusinesses(item) {
+document.getElementById("list").addEventListener("click", displayTable);
+document.getElementById("card").addEventListener("click", displayCards);
+
+// function displayCondition(buttonRequest) {
+//     if (buttonRequest) {
+//         businesses.forEach(displayCards);
+//     }
+//     else {
+//         businesses.forEach(displayTable);
+//     }
+// }
+
+function displayCards(item) {
     let card = document.createElement("section");
+
     let h2 = document.createElement("h2");
     let address = document.createElement("p");
     let phone = document.createElement("p");
@@ -42,6 +54,27 @@ function displayBusinesses(item) {
     
     document.querySelector(".cards").appendChild(card);
 }
+function displayTable(item) {
+    let row = document.createElement("table");
+
+    let h2 = document.createElement("h2");
+    let address = document.createElement("p");
+    let phone = document.createElement("p");
+    let website = document.createElement("p");
+
+    h2.textContent = item.name;
+    address.textContent = item.address;
+    phone.textContent = item.phone;
+    website.textContent = item.website;
+
+    row.appendChild(h2);
+    row.appendChild(address);
+    row.appendChild(phone);
+    row.appendChild(website);
+    
+}
+
+
 
 // // HOW TO REMOVE
 // // -- put all cards in a div and hide that
