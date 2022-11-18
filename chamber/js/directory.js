@@ -11,22 +11,31 @@ async function getBusinesses(requestURL) {
         console.log(jsObject);
         const businesses = jsObject["businesses"];
         console.log(businesses);
-    }
+        
+        businesses.forEach(business => {
+            displayCards(business)
+        });
+        
+        document.getElementById("list").addEventListener("click", () => {
+            document.querySelector(".cards").innerHTML = "";
+            document.querySelector("#card").removeAttribute("disabled");
+            document.querySelector("#list").setAttribute("disabled", true);
+            businesses.forEach(business => {                
+                displayTable(business)
+            });
+        });
+        document.getElementById("card").addEventListener("click", () => {
+            document.querySelector(".table").innerHTML = "";
+            document.querySelector("#list").removeAttribute("disabled");     
+            document.querySelector("#card").setAttribute("disabled", true);
+            businesses.forEach(business => {
+                displayCards(business)
+            });
+        });        
+    };
 };
 
 getBusinesses(requestURL);
-
-document.getElementById("list").addEventListener("click", displayTable);
-document.getElementById("card").addEventListener("click", displayCards);
-
-// function displayCondition(buttonRequest) {
-//     if (buttonRequest) {
-//         businesses.forEach(displayCards);
-//     }
-//     else {
-//         businesses.forEach(displayTable);
-//     }
-// }
 
 function displayCards(item) {
     let card = document.createElement("section");
@@ -42,7 +51,7 @@ function displayCards(item) {
     address.textContent = item.address;
     phone.textContent = item.phone;
     website.textContent = item.website;
-    img.setAttribute("src", item.logo);
+    img.setAttribute("src", `images/${item.logo}`);
     img.setAttribute("alt", item.name);
 
 
@@ -55,23 +64,24 @@ function displayCards(item) {
     document.querySelector(".cards").appendChild(card);
 }
 function displayTable(item) {
-    let row = document.createElement("table");
+    let row = document.createElement("tr");
 
-    let h2 = document.createElement("h2");
-    let address = document.createElement("p");
-    let phone = document.createElement("p");
-    let website = document.createElement("p");
+    let name = document.createElement("td");
+    let address = document.createElement("td");
+    let phone = document.createElement("td");
+    let website = document.createElement("td");
 
-    h2.textContent = item.name;
+    name.textContent = item.name;
     address.textContent = item.address;
     phone.textContent = item.phone;
     website.textContent = item.website;
 
-    row.appendChild(h2);
+    row.appendChild(name);
     row.appendChild(address);
     row.appendChild(phone);
-    row.appendChild(website);
+    row.appendChild(website); 
     
+    document.querySelector(".table").appendChild(row);
 }
 
 
