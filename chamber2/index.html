@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="St. Louis Chamber of Commerce - Samantha Atkins - WDD 230">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/main.js"></script>
-    <script defer src="js/directory.js"></script>
-    <title>STL Chamber | Directory</title>
+    <script defer src="js/home.js"></script>
+    <title>STL Chamber | Home</title>
 </head>
 <body>
-    <div id="directory">
+    <div id="content">
         <header>
             <div class="msg_box">Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
             <nav>
@@ -41,13 +40,32 @@
         </header>
         <main>
             <div class="date"></div>
-            <h1>Directory</h1>
-            <div id="buttons">
-                <button id="card">&#9871;</button>
-                <button id="list">&#9868;</button>
+            <div class="categories" id="hero">
+                <picture>
+                    <source media="(min-width: 64em)" srcset="images/hero.jpeg" alt="St. Louis Arch">
+                    <source media="(min-width: 35rem)" srcset="images/rsz_hero.jpg" alt="St. Louis Arch">
+                    <img id="hero_img" src="images/rsz_1hero.jpg" alt="St. Louis Arch">
+                </picture>
+                <button id="join_button">Join the Chamber</button>
             </div>
-            <div class="cards"></div>
-            <table class="table"></table>
+            <h2 class="categories" class="join">Join</h2>
+            <h2 class="categories" id="event">Event</h2>
+            <div class="categories headings weather">
+                <h2>Weather</h2>
+                <h1 id="weather_icon"><span id="icon-src"></span></h1><figure><img src="" alt="" id="weathericon"/>  <figcaption></figcaption></figure>
+                <p id="degrees"><span id="current-temp">40</span>&#8457;</p>
+                <p id="weather_text">Partly Cloudy</p>
+                <p>Wind Speed: <span id="speed">5</span>mi/hr</p>
+                <p>Wind Chill: <span id="chill">N/A</span></p>
+            </div>
+            <div class="categories headings news">
+                <h2 id="news">News Release</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius doloribus tempora nam molestiae inventore minus voluptate minima perspiciatis consequuntur delectus ipsam quidem, velit ad praesentium veniam possimus nulla molestias omnis?</p>
+            </div>
+            <div class="spotlight_div">
+                <h2 class="categories">Spotlight 1</h2>
+                <h2 class="categories">Spotlight 2</h2>
+            </div>
         </main>
         <footer>
             <a id="footer_logo" href="index.html">
@@ -65,8 +83,6 @@
             </div>
             <p id="bottom">STL Chamber of Commerce | WDD 230 Project | Samantha Atkins | &copy; 2022 | Last Updated: <span class="updated"></span></p>
         </footer>
-    </div>
-
-    
+    </div> 
 </body>
 </html>

@@ -1,0 +1,132 @@
+@media only screen and (min-width: 35rem) {
+    .socials {
+        font-size: 4em;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0 10px 0 0;
+        /* padding-bottom: 10px; */
+    }
+    .logo {
+        width: 50%;
+    }
+    #socials_icons {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    #hamburgerBtn {
+        margin: 0 0 0 10px;
+        font-size: 4em;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .date {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    #hero {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    #news {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .spotlight_div {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    #join {
+        display: block;
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    #event {
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+    #weather {
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .logo {
+        margin: auto;
+    }
+    #footer_logo {
+        grid-column: 1/2;
+        width: 100%;
+        margin: 0;
+    }
+    #contact {
+        grid-column: 2/3;
+        margin: 0;
+        border-top: none;
+        border-bottom: none;
+    }
+    #bottom {
+        grid-column: 1/3;
+    }
+    nav ul li.active a {
+        font-size: 2em;
+    }
+    #join_button {
+        background-color: #185B31;
+        color: white;
+        font-family: 'Fjalla One', sans-serif;
+        letter-spacing: .1em;
+        font-weight: bold;
+        font-size: 1em;
+        border-radius: 10px;
+        border: solid white 5px;
+        text-decoration: none;
+        padding: 15px 25px;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    /* DISCOVER */
+    #visitMessage {
+        grid-column: 1/3;
+    }
+    .pictures {
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* padding-top: 10px; */
+    }
+    /* does it count as optimization if I set the width and height? */
+    picture img {
+        height: 150px;
+    }
+    .pictures p {
+        text-align: center;
+        /* grid-row: 2/3; */
+        padding: 0px 10px;
+    }
+    .fair {
+        grid-column: 1/2;
+    }
+    .art {
+        grid-column: 2/3;
+    }
+    .butterfly {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    /* JOIN */
+    #join main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    textarea {
+        width: 400px;
+    }
+}

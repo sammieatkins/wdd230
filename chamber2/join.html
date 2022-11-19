@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="St. Louis Chamber of Commerce - Samantha Atkins - WDD 230">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/join.js"></script>
+    <title>STL Chamber | Join</title>
+</head>
+<body>
+    <div id="join">
+        <header>
+            <div class="msg_box">Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+            <nav>
+                <a id="button" href="#" onclick="toggleMenu()"><button id="hamburgerBtn"><i class="fa-solid fa-bars menu"></i></button></a>
+                <ul id="primaryNav">
+                    <li class="active nav_links"><a href="index.html">HOME</a></li>
+                    <li class="active nav_links"><a href="discover.html">DISCOVER</a></li>
+                    <li class="active nav_links"><a href="directory.html">DIRECTORY</a></li>
+                    <li class="active nav_links"><a href="join.html">JOIN</a></li>
+                    <li class="active nav_links"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <a id="logo_link" href="index.html">
+                <img class="logo" id="nav_logo" src="images/stl-commerce-logo.png" alt="St. Louis Chamber of Commerce Logo">
+            </a>
+            <div id="socials_icons">
+                <a href="https://facebook.com" target="_blank" class="socials"><i class="fa-brands fa-facebook-square"></i></a>   
+                <a href="https://linkedin.com" target="_blank" class="socials"><i class="fa-brands fa-linkedin"></i></a>    
+            </div>
+        </header>
+        <main>
+            <div class="date"></div>
+            <form method="get" action="thankyou.html">
+                <label for="fname">First Name *:</label>
+                <input id="fname" type="text" name="firstname" required>
+                
+                <label for="lname">Last Name *:</label>
+                <input id="lname" type="text" name="lastname" required>
+                
+                <label for="title">Business Position Title *:</label>
+                <p>Only letters, spaces, and dashes. At least 7 characters</p>
+                <input id="title" type="text" name="lastname" pattern="[- A-Za-z]+" minlength="7" required>
+                
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email">
+                <label for="phone">Cell Number *:</label>
+                <input id="phone" type="tel" name="cell" required>
+
+                <label id="member">Enter Your Membership</label>
+                <div id="radio">
+                    <!-- level 4 is the best -->
+                    <div class="radio">
+                        <input id="one" type="radio" name="mlevel" value="level1">
+                        <label for="one">Non Profit</label>
+                    </div>
+                    <div class="radio">
+                        <input id="two" type="radio" name="mlevel" value="level2">
+                        <label for="two">Bronze</label>
+                    </div>
+                    <div class="radio">
+                        <input id="three" type="radio" name="mlevel" value="level3">
+                        <label for="three">Silver</label>
+                    </div>
+
+                    <div class="radio">
+                        <input id="four" type="radio" name="mlevel" value="level4">                 
+                        <label for="four">Gold</label>
+                    </div>
+                    <!-- add business name? -->
+                </div>
+
+                <label for="message">Business Description:</label>
+                <textarea id="message" placeholder="Your business description"></textarea>
+
+                <input id="date" type="hidden" name="todaydate">
+
+                <!-- use input as a button in the form. triggers "action" in line 10. -->
+                <input id="submit" type="submit" value="Join the Chamber">                
+            </form>
+            <div id="info">
+                <h1>
+                    Membership Levels Benefits
+                </h1>
+
+
+                <h2>
+                    NP Membership
+                </h2>
+                <p>
+                    - For non profit organizations and there is no fee
+                </p>
+
+
+                <h2>
+                    Bronze Membership
+                </h2>
+                <p>
+                    - 15% discount on events
+                </p>
+                <p>
+                    - 10% discount on advertising
+                </p>
+                <p>
+                    - Fee of $50/month
+                </p>
+
+
+                <h2>
+                    Silver Membership
+                </h2>
+                <p>
+                    - 25% discount on events
+                </p>
+                <p>
+                    - 15% discount on advertising
+                </p>
+                <p>
+                    - Free participation in the trade fair
+                </p>
+                <p>
+                    - Fee of $100/month
+                </p>
+
+
+                <h2>
+                    Gold Membership
+                </h2>
+                <p>
+                    - 50% discount on events
+                </p>
+                <p>
+                    - 50% discount on advertising
+                </p>
+                <p>
+                    - Free participation in the trade fair
+                </p>
+                <p>
+                    - 5 free featured ads per year
+                </p>
+                <p>
+                    - 1 free training per quarter
+                </p>
+                <p>
+                    - Fee of $250/month
+                </p>
+
+
+            </div>
+        </main>
+        <footer>
+            <a id="footer_logo" href="index.html">
+                <img class="logo" src="images/stl-commerce-logo.png" alt="St. Louis Chamber of Commerce Logo">
+            </a>
+            <div id="contact">
+                <div class="footer_address">
+                    <p>20 Strawberry Lane</p>
+                    <p>St. Louis, MO 63043</p>
+                </div>
+                <div class="footer_contact">
+                    <p>info@stlchamberofcommerce.org</p>
+                    <p>314-123-4567</p>
+                </div>
+            </div>
+            <p id="bottom">STL Chamber of Commerce | WDD 230 Project | Samantha Atkins | &copy; 2022 | Last Updated: <span class="updated"></span></p>
+        </footer>
+    </div>  
+</body>
+</html>

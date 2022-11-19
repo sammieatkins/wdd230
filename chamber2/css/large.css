@@ -13,17 +13,14 @@
     .msg_box {
         grid-column: 1/4;
         grid-row: 1/2;
-        /* margin-top: 10px; */
         border: none;
-        /* border-top: solid black 5px; */
-        border-bottom: solid black 5px;
     }
     #logo_link {
         grid-column: 1/2;
         grid-row: 2/3;
     }
     #nav_logo {
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
     }
     nav ul li {
@@ -53,7 +50,6 @@
         background-color: #185B31;
         padding: 10px;
         letter-spacing: .2em;
-        border: black solid 5px;
         margin: 10px;
     }
     nav a {
@@ -84,8 +80,6 @@
     .date {
         font-family: 'Fjalla One', sans-serif;
         padding: 10px;
-        border-top: black solid 5px;
-        border-bottom: black solid 5px;
         text-align: center;
     }
     nav ul#primaryNav {
@@ -95,7 +89,6 @@
     footer {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        border-top: black solid 5px;
     }
     #footer_logo {
         grid-column: 1/2;
@@ -134,7 +127,7 @@
         height: 200px;
         border: 5px solid rgba(0, 0, 0, 0);
     }
-    picture img:hover {
+    #discover picture img:hover {
         border: solid black 5px;
     }
 }

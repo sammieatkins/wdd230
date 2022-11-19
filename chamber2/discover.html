@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="St. Louis Chamber of Commerce - Samantha Atkins - WDD 230">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/discover.js"></script>
+    <title>STL Chamber | Discover</title>
+</head>
+<body>
+    <div id="discover">
+        <header>
+            <div class="msg_box">Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+            <nav>
+                <a id="button" href="#" onclick="toggleMenu()"><button id="hamburgerBtn"><i class="fa-solid fa-bars menu"></i></button></a>
+                <ul id="primaryNav">
+                    <li class="active nav_links"><a href="index.html">HOME</a></li>
+                    <li class="active nav_links"><a href="discover.html">DISCOVER</a></li>
+                    <li class="active nav_links"><a href="directory.html">DIRECTORY</a></li>
+                    <li class="active nav_links"><a href="join.html">JOIN</a></li>
+                    <li class="active nav_links"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <a id="logo_link" href="index.html">
+                <img class="logo" id="nav_logo" src="images/stl-commerce-logo.png" alt="St. Louis Chamber of Commerce Logo">
+            </a>
+            <div id="socials_icons">
+                <a href="https://facebook.com" target="_blank" class="socials"><i class="fa-brands fa-facebook-square"></i></a>   
+                <a href="https://linkedin.com" target="_blank" class="socials"><i class="fa-brands fa-linkedin"></i></a>    
+            </div>
+        </header>
+        <main>
+            <div class="date"></div>
+            <h1 id="visitMessage">Days since last visit: <span id="daysSince"></span></h1>
+            <div class="pictures">
+                <div class="fair">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/1904_world's_fair.jpeg" alt="1904 World's Fair">
+                    </picture>
+                    <p>Fun fact: The Louisiana Purchase Exposition, informally known as the St. Louis World's Fair, was an international exposition held in St. Louis, Missouri, United States, from April 30 to December 1, 1904. Local, state, and federal funds totaling $15 million were used to finance the event.</p>  
+                </div>
+                <div class="art">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/art_museum.jpeg" alt="St. Louis Art Museum">
+                    </picture>              
+                    <p>The Saint Louis Art Museum is one of the principal U.S. art museums, with paintings, sculptures, cultural objects, and ancient masterpieces from all corners of the world. Its three-story building stands in Forest Park in St. Louis, Missouri, where it is visited by up to a half million people every year.</p>
+                </div>
+                <div class="stadium">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/busch_stadium.jpeg" alt="Busch Stadium">
+                    </picture>
+                    <p>Busch Stadium is a baseball stadium located in St. Louis, Missouri. The stadium serves as the home of the St. Louis Cardinals, the city's Major League Baseball franchise, and has a seating capacity of 44,494, with 3,706 club seats and 61 luxury suites.</p>
+                </div>
+                <div class="butterfly">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/butterfly_house.jpeg" alt="Sophia M. Sachs Butterfly House">
+                    </picture>
+                    <p>The Sophia M. Sachs Butterfly House is a butterfly zoo operated by the Missouri Botanical Gardens, and located in Faust Park in Chesterfield, Missouri, United States.</p>
+                </div>
+                <div class="basilica">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/Cathedral_Basilica_of_Saint_Louis_(St._Louis,_MO)_-_exterior,_quarter_view_2.jpg" alt="Cathedral Basilica of St. Louis">
+                    </picture>
+                    <p>The Cathedral Basilica of Saint Louis, also known as the Saint Louis Cathedral, is a cathedral of the Roman Catholic Church located in the Central West End neighborhood of St. Louis, Missouri.</p>
+                </div>
+                <div class="museum">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/city_museum.jpeg" alt="City Museum">
+                    </picture>
+                    <p>The City Museum is a museum whose exhibits consist largely of repurposed architectural and industrial objects, housed in the former International Shoe building in the Washington Avenue Loft District of St. Louis, Missouri, United States. It is essentially a playground for adults!!</p>
+                </div>
+                <div class="fitz">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/fitz.jpeg" alt="Fitz's Root Beer">
+                    </picture>
+                    <p>Fitz's Root Beer is a local St. Louis craft soda micro-brewery. They bottle all 19 of their flavors on their vintage bottling line on the floor of our restaurant in the historic Delmar Loop.</p>
+                </div>
+                <div class="science">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/science_center.jpeg" alt="St. Louis Science Center">
+                    </picture>
+                    <p>The Saint Louis Science Center, founded as a planetarium in 1963, is a collection of buildings including a science museum and planetarium in St. Louis, Missouri, on the southeastern corner of Forest Park.</p>
+                </div>
+                <div class="zoo">
+                    <picture>
+                        <img src="https://dummyimage.com/300x200/ccc/fff" data-src="images/zoo.jpeg" alt="St. Louis Zoo">
+                    </picture>
+                    <p>The Saint Louis Zoo, officially the Saint Louis Zoological Park, is a zoo in Forest Park, St. Louis, Missouri. It is recognized as a leading zoo in animal management, research, conservation, and education.</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a id="footer_logo" href="index.html">
+                <img class="logo" src="images/stl-commerce-logo.png" alt="St. Louis Chamber of Commerce Logo">
+            </a>
+            <div id="contact">
+                <div class="footer_address">
+                    <p>20 Strawberry Lane</p>
+                    <p>St. Louis, MO 63043</p>
+                </div>
+                <div class="footer_contact">
+                    <p>info@stlchamberofcommerce.org</p>
+                    <p>314-123-4567</p>
+                </div>
+            </div>
+            <p id="bottom">STL Chamber of Commerce | WDD 230 Project | Samantha Atkins | &copy; 2022 | Last Updated: <span class="updated"></span></p>
+        </footer>
+    </div> 
+</body>
+</html>

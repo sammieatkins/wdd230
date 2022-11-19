@@ -41,7 +41,7 @@ function displayProphets(item) {
     // -- put all cards in a div and hide that
     // -- remove other thing first, then display new
     // card.style.display = "none";
-    card.forEach((item) => {
-        item.remove();
-    })
+    // card.forEach((item) => {
+    //     item.remove();
+    // })
 }
