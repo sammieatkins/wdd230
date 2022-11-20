@@ -51,6 +51,7 @@
         padding: 10px;
         letter-spacing: .2em;
         margin: 10px;
+        border-radius: 5px;
     }
     nav a {
         display: block;
@@ -58,7 +59,6 @@
         text-decoration: none;
         color: white;
         padding: 10px;
-        border: 5px solid rgba(0, 0, 0, 0);
     }
     #button {
         display: none;
@@ -74,8 +74,7 @@
     nav ul li a:hover {
         padding: 10px;
         background-color: white;
-        border: 5px solid rgba(0, 0, 0);
-        color: black;
+        color: #185B31;
     }
     .date {
         font-family: 'Fjalla One', sans-serif;
@@ -125,9 +124,14 @@
     picture img {
         width: 300px;
         height: 200px;
-        border: 5px solid rgba(0, 0, 0, 0);
     }
     #discover picture img:hover {
         border: solid black 5px;
+    }
+    .spotlight_div {
+        background-color: #172A3A;
+    }
+    .categories {
+        background-color: white;
     }
 }

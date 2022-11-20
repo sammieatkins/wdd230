@@ -76,14 +76,14 @@
         font-size: 2em;
     }
     #join_button {
-        background-color: #185B31;
-        color: white;
+        /* background-color: #185B31; */
+        /* color: white; */
         font-family: 'Fjalla One', sans-serif;
         letter-spacing: .1em;
         font-weight: bold;
         font-size: 1em;
         border-radius: 10px;
-        border: solid white 5px;
+        /* border: solid white 5px; */
         text-decoration: none;
         padding: 15px 25px;
         position: absolute;

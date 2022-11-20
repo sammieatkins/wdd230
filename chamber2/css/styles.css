@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Quicksand:wght@400;700&display=swap');
 
+body {
+    background-color: #185B31;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fjalla One', sans-serif;
+    color: #172A3A;
+    border-radius: 5px;
 }
 p {
     font-family: 'Quicksand', sans-serif;
+    color: #172A3A;
+}
+img {
+    border-radius: 5px;
+}
+div {
+    border-radius: 5px;
 }
 header {
     display: grid;
@@ -50,14 +62,16 @@ header {
 }
 #content {
     background-color: white;
+    padding: 10px;
 }
 .date {
-    background-color: #185B31;
+    background-color: #172A3A;
     color: white;
     font-family: 'Fjalla One', sans-serif;
     padding: 10px;
     text-align: center;
     font-size: 1.2em;
+    border-radius: 5px;
 }
 .categories {
     padding: 10px 10px 0px 10px;
@@ -71,6 +85,7 @@ header {
     padding: 0;
     border: none;
     position: relative;
+    margin: 10px 0px;
 }
 #hero_img {
     padding: 0;
@@ -80,14 +95,14 @@ header {
     box-sizing: border-box;
 }
 #join_button {
-    background-color: #185B31;
-    color: white;
+    background-color: white;
+    color: #185B31;
     font-family: 'Fjalla One', sans-serif;
     letter-spacing: .1em;
     font-size: .7em;
     font-weight: bold;
     border-radius: 10px;
-    border: solid white 5px;
+    border: solid #185B31 5px;
     text-decoration: none;
     padding: 10px 15px;
     position: absolute;
@@ -132,6 +147,7 @@ nav ul li a{
 nav ul li.active a{
     background-color: white;
     color: #185B31;
+    border-radius: 5px;
 }
 nav ul li a:hover {
     background-color: white;
@@ -142,9 +158,8 @@ nav ul.open {
     display: block;
     padding-left: 0px;
 }
-footer {
-    margin-top: 5px;
-}
+
+
 footer p {
     text-align: center;
     font-family: "quicksand", sans-serif;
@@ -165,6 +180,7 @@ footer p {
     margin: 0;
     padding: 10px;
     font-weight: bold;
+    border-radius: 5px;
 }
 .join {
     display: none;
@@ -189,6 +205,10 @@ picture img {
 }
 
 /* JOIN */
+#join {
+    background-color: white;
+    padding: 10px;
+}
 form {
     margin: 40px;
     grid-column: 1/2;
@@ -213,6 +233,7 @@ input {
     font-family: "quicksand", sans-serif;
     margin-bottom: 20px;
     border: black solid 5px;
+    border-radius: 5px;
 }
 label, input {
     display: block;
@@ -224,6 +245,7 @@ textarea {
     height: 150px;
     width: 260px;
     border: solid black 5px;
+    border-radius: 5px;
 }
 #radio label, input {
     display: inline;
@@ -234,11 +256,12 @@ textarea {
 }
 #submit {
     padding: 15px 30px;
-    background-color: #185B31;
+    background-color: #172A3A;
     color: white;
     font-weight: bold;
     margin: 20px 0px 0px 0px;
-    border: black solid 5px;
+    border: none;
+    /* border: #185B31 solid 5px; */
 }
 form p {
     margin: 0px 0px 7px 0px;
@@ -255,6 +278,10 @@ form p {
 }
 
 /* DIRECTORY */
+#directory {
+    background-color: white;
+    padding: 10px;
+}
 #directory main {
     display: block;
 }
@@ -311,7 +338,23 @@ table {
     border: 1px solid black;
 }
 
+/* WEATHER */
+#weather {
+    background-color: #185B31;
+    color: white;
+}
+#weather p, #weather h2 {
+    color: white;
+}
+#weather figcaption {
+    font-family: "quicksand", sans-serif;
+}
 
+/* DISCOVER */
+#discover {
+    background-color: white;
+    padding: 10px;
+}
 
 
 
