@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Quicksand:wght@400;700&display=swap');
-
 body {
-    background-color: #185B31;
+    background-color: white;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fjalla One', sans-serif;
@@ -62,10 +61,10 @@ header {
 }
 #content {
     background-color: white;
-    padding: 10px;
+    padding: 0px 60px;
 }
 .date {
-    background-color: #172A3A;
+    background-color: #185B31;
     color: white;
     font-family: 'Fjalla One', sans-serif;
     padding: 10px;
@@ -95,19 +94,17 @@ header {
     box-sizing: border-box;
 }
 #join_button {
-    background-color: white;
-    color: #185B31;
-    font-family: 'Fjalla One', sans-serif;
-    letter-spacing: .1em;
+    background-color: #172A3A;
+    color: white;
+    font-family: "Quicksand", sans-serif;
     font-size: .7em;
     font-weight: bold;
     border-radius: 10px;
-    border: solid #185B31 5px;
+    /* border: solid #185B31 5px; */
     text-decoration: none;
     padding: 10px 15px;
     position: absolute;
     right: 10px;
-    bottom: 15px;
 }
 .spotlight_div {
     padding: 10px;
@@ -207,10 +204,14 @@ picture img {
 /* JOIN */
 #join {
     background-color: white;
-    padding: 10px;
+    padding: 0px 60px;
+}
+#join h1 {
+    grid-column: 1/3;
 }
 form {
     margin: 40px;
+    margin-top: 20px;
     grid-column: 1/2;
 }
 #info {
@@ -246,6 +247,7 @@ textarea {
     width: 260px;
     border: solid black 5px;
     border-radius: 5px;
+    padding: 5px 10px;
 }
 #radio label, input {
     display: inline;
@@ -280,7 +282,7 @@ form p {
 /* DIRECTORY */
 #directory {
     background-color: white;
-    padding: 10px;
+    padding: 0px 60px;
 }
 #directory main {
     display: block;
@@ -340,7 +342,7 @@ table {
 
 /* WEATHER */
 #weather {
-    background-color: #185B31;
+    background-color: #172A3A;
     color: white;
 }
 #weather p, #weather h2 {
@@ -353,10 +355,14 @@ table {
 /* DISCOVER */
 #discover {
     background-color: white;
-    padding: 10px;
+    padding: 0px 60px;
 }
 
-
+/* CONTACT */
+#contact_page {
+    background-color: white;
+    padding: 0px 60px;
+}
 
 
 /* WEATHER */
