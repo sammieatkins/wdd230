@@ -1,10 +1,5 @@
 @media only screen and (min-width: 35rem) {
-
-    body {
-        background-color: #185B31;
-    }
     .socials {
-        font-size: 4em;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
