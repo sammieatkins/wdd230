@@ -50,10 +50,6 @@
         grid-column: 2/3;
         grid-row: 6/7;
     }
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
     .logo {
         margin: auto;
     }
@@ -83,7 +79,7 @@
         padding: 15px 25px;
         position: absolute;
         right: 20px;
-        top: 30px;
+        top: 20px;
     }
 
     /* DISCOVER */

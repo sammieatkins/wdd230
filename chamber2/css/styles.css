@@ -36,7 +36,7 @@ header {
 }
 .logo {
     width: 70%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: block;
 }
 #logo_link {
@@ -77,7 +77,7 @@ header {
     object-fit: cover;
 }
 button {
-    background-color: #172A3A;
+    background-color: #C84C09;
     color: #FFF4E8;
     font-family: "Quicksand", sans-serif;
     font-weight: bold;
@@ -176,14 +176,21 @@ footer p {
     display: flex;
     flex-direction: column;
 }
-picture img {
+#discover picture img {
     display: block;
     width: 90%;  
-    margin: 0 auto;  
+    margin: 0 auto;
+    margin-top: 15px;  
 }
 .pictures p {
     text-align: center;
-    padding: 0px 10px;
+    padding: 0px 15px;
+}
+.pictures div {
+    background-color: #E7D4C3;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
 }
 #visitMessage {
     text-align: center;
@@ -192,14 +199,12 @@ picture img {
 /* JOIN */
 #join {
     background-color: #FFF4E8;
-    padding: 0px 60px;
 }
 #join h1 {
     grid-column: 1/3;
 }
 form {
     margin: 40px;
-    margin-top: 20px;
     grid-column: 1/2;
 }
 #info {
@@ -209,10 +214,10 @@ form {
     margin-top: 0;
 }
 form input:required {
-    border: red solid 5px;
+    border: #C84C09 solid 5px;
 }
 form input:required:valid {
-    border: green solid 5px;
+    border: #2E6171 solid 5px;
 }
 label {
     font-family: 'Fjalla One', sans-serif;
@@ -221,7 +226,7 @@ label {
 input {
     font-family: "quicksand", sans-serif;
     margin-bottom: 20px;
-    border: black solid 5px;
+    border: #2E6171 solid 5px;
     border-radius: 5px;
 }
 label, input {
@@ -233,12 +238,15 @@ textarea {
     display: block;
     height: 150px;
     width: 260px;
-    border: solid black 5px;
+    border: solid #2E6171 5px;
     border-radius: 5px;
     padding: 5px 10px;
 }
 #radio label, input {
     display: inline;
+}
+.radio input:checked {
+    background-color: #2E6171;
 }
 #radio label {
     font-family: "quicksand", sans-serif;
@@ -246,7 +254,7 @@ textarea {
 }
 #submit {
     padding: 15px 30px;
-    background-color: #172A3A;
+    background-color: #C84C09;
     color: #FFF4E8;
     font-weight: bold;
     margin: 20px 0px 0px 0px;
@@ -270,7 +278,6 @@ form p {
 /* DIRECTORY */
 #directory {
     background-color: #FFF4E8;
-    padding: 0px 60px;
 }
 #directory main {
     display: block;
@@ -328,15 +335,14 @@ td, th {
     padding: 5px;
 }
 table, td, th {
-    border-top: 1px solid black;
     border-collapse: collapse;
+    padding: 15px;
 }
 tr:nth-child(odd) {
-    background-color: rgb(234, 232, 232);
+    background-color: #E7D4C3;
 }
 table {
-    margin: 20px 40px;
-    border: 1px solid black;
+    margin: 20px auto;
 }
 
 .categories {
@@ -356,13 +362,14 @@ table {
 /* DISCOVER */
 #discover {
     background-color: #FFF4E8;
-    padding: 0px 60px;
 }
 
 /* CONTACT */
 #contact_page {
     background-color: #FFF4E8;
-    padding: 0px 60px;
+}
+#contact_page form {
+    margin-top: 20px;
 }
 
 
