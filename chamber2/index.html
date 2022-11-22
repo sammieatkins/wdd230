@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="St. Louis Chamber of Commerce - Samantha Atkins - WDD 230">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/db4b21192c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -21,7 +21,7 @@
         <header>
             <div class="msg_box">Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
             <nav>
-                <a id="button" href="#" onclick="toggleMenu()"><button id="hamburgerBtn"><i class="fa-solid fa-bars menu"></i></button></a>
+                <a id="button" href="#" onclick="toggleMenu()"><button id="hamburgerBtn"><span class="material-symbols-outlined">menu</span></button></a>
                 <ul id="primaryNav">
                     <li class="active nav_links"><a href="index.html">HOME</a></li>
                     <li class="active nav_links"><a href="discover.html">DISCOVER</a></li>
@@ -34,7 +34,7 @@
                 <img class="logo" id="nav_logo" src="images/stl-commerce-logo.png" alt="St. Louis Chamber of Commerce Logo">
             </a>
             <div id="socials_icons">
-                <a href="https://facebook.com" target="_blank" class="socials"><i class="fa-brands fa-facebook-square"></i></a>   
+                <a href="https://facebook.com" target="_blank" class="socials"><i class="fa-brands fa-square-facebook"></i></a>   
                 <a href="https://linkedin.com" target="_blank" class="socials"><i class="fa-brands fa-linkedin"></i></a>    
             </div>
         </header>
@@ -48,9 +48,18 @@
                 </picture>
                 <button id="join_button">Join the Chamber</button>
             </div>
-            <h2 class="categories" class="join">Join</h2>
-            <h2 class="categories" id="event">Event</h2>
-            <div class="categories headings" id="weather">
+            <!-- JOIN -->
+            <div class="categories" id="join_div">
+                <button id="join_button2">Join Us!</button>
+                <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+            </div>
+            <!-- EVENT -->
+            <div class="categories" id="event">
+                <h2>Event</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, tenetur laboriosam! Obcaecati, esse. Animi laborum eos officiis voluptas mollitia adipisci eius sunt, recusandae, debitis dolores, ipsum dicta laudantium soluta est</p>
+            </div>
+            <!-- WEATHER -->
+            <div class="categories" id="weather">
                 <h2>Weather</h2>
                 <h1 id="weather_icon"><span id="icon-src"></span></h1>
                 <figure><img src="" alt="" id="weathericon"/><figcaption></figcaption></figure>
@@ -58,13 +67,16 @@
                 <p>Wind Speed: <span id="speed">5</span>mi/hr</p>
                 <p>Wind Chill: <span id="chill">N/A</span></p>
             </div>
-            <div class="categories headings news">
-                <h2 id="news">News Release</h2>
+            <!-- NEWS -->
+            <div class="categories" id="news">
+                <h2>News Release</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius doloribus tempora nam molestiae inventore minus voluptate minima perspiciatis consequuntur delectus ipsam quidem, velit ad praesentium veniam possimus nulla molestias omnis?</p>
             </div>
-            <div class="spotlight_div">
-                <h2 class="categories">Spotlight 1</h2>
-                <h2 class="categories">Spotlight 2</h2>
+            <!-- SPOTLIGHTS -->
+            <div id="spotlight_div">
+                <h2 class="categories" id="spotlight1">Spotlight 1</h2>
+                <h2 class="categories" id="spotlight2">Spotlight 2</h2>
+                <h2 class="categories" id="spotlight3">Spotlight 3</h2>
             </div>
         </main>
         <footer>
