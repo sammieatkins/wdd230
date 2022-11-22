@@ -1,7 +1,7 @@
 // directory
 // -- event listeners on table button and card button
 // -- get rid of table/cards as well
-const requestURL = "https://sammieatkins.github.io/wdd230/chamber/data.json";
+const requestURL = "https://sammieatkins.github.io/wdd230/chamber2/data.json";
 
 async function getBusinesses(requestURL) {
     const response = await fetch(requestURL);
