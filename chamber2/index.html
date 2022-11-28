@@ -43,11 +43,11 @@
             <div id="home">
                 <div id="hero">
                     <picture>
-                        <source media="(min-width: 64em)" srcset="images/hero.jpeg" alt="St. Louis Arch">
-                        <source media="(min-width: 35rem)" srcset="images/rsz_hero.jpg" alt="St. Louis Arch">
+                        <source id="sm_hero_img" media="(min-width: 64em)" srcset="images/hero.jpeg" alt="St. Louis Arch">
+                        <source id="med_hero_img" media="(min-width: 35rem)" srcset="images/rsz_hero.jpg" alt="St. Louis Arch">
                         <img id="hero_img" src="images/rsz_1hero.jpg" alt="St. Louis Arch">
                     </picture>
-                    <button id="join_button">Join the Chamber</button>
+                    <button id="join_button"><a href="join.html">Join the Chamber</a></button>
                 </div>
                 <!-- JOIN -->
                 <div class="categories" id="join_div">
@@ -63,7 +63,7 @@
                 <div class="categories" id="weather">
                     <h2>Weather</h2>
                     <h1 id="weather_icon"><span id="icon-src"></span></h1>
-                    <figure><img src="" alt="" id="weathericon"/><figcaption></figcaption></figure>
+                    <figure><img src="" alt="" id="weathericon"/><figcaption id="caption"></figcaption></figure>
                     <p id="degrees"><span id="current-temp">40</span>&#8457;</p>
                     <p>Wind Speed: <span id="speed">5</span>mi/hr</p>
                     <p>Wind Chill: <span id="chill">N/A</span></p>
@@ -75,26 +75,35 @@
                 </div>
                 <!-- SPOTLIGHTS -->
                 <div class="categories" id="spotlight_div">
-                    <h2 class="categories" id="spotlight1">Spotlight 1</h2>
-                    <h2 class="categories" id="spotlight2">Spotlight 2</h2>
-                    <h2 class="categories" id="spotlight3">Spotlight 3</h2>
+                    <div class="categories spotlight" id="spotlight1">
+                        <h2>Spotlight 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga cum autem at distinctio nisi. Soluta asperiores fuga deserunt aliquam ratione, debitis excepturi rem minima voluptatem, sint commodi itaque recusandae iure.</p>
+                    </div>
+                    <div class="categories spotlight" id="spotlight2">
+                        <h2>Spotlight 2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, facilis. Consequatur placeat voluptatibus magni laborum dignissimos labore distinctio accusantium ad vitae facere</p>
+                    </div>
+                    <div class="categories spotlight" id="spotlight3">
+                        <h2>Spotlight 3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate architecto aspernatur inventore accusamus veniam! Quas deleniti maxime magnam ipsam, pariatur ratione nesciunt quod quae voluptates, unde doloribus, eaque hic!</p>
+                    </div>
                 </div>
             </div>
         </main>
         <footer>
             <div id="top">
                 <a id="footer_logo" href="index.html">
-                    <img class="logo" src="images/stl-commerce-logo.png" alt="St. Louis Chamber of Commerce Logo">
+                    <img class="logo" id="footer_logo_img" src="images/stl-commerce-logo.png" alt="St. Louis Chamber of Commerce Logo">
                 </a>
                 <div id="contact">
                     <div class="footer_address">
                         <p>20 Strawberry Lane</p>
                         <p>St. Louis, MO 63043</p>
-                    </div>
-                    <div class="footer_contact">
                         <p>info@stlchamberofcommerce.org</p>
                         <p>314-123-4567</p>
                     </div>
+                    <!-- <div class="footer_contact">
+                    </div> -->
                 </div>
             </div>
             <p id="bottom">STL Chamber of Commerce | WDD 230 Project | Samantha Atkins | &copy; 2022 | Last Updated: <span class="updated"></span></p>

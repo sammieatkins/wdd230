@@ -20,7 +20,7 @@ img {
 } */
 header {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
 }
 .msg_box {
@@ -36,8 +36,8 @@ header {
 }
 .logo {
     width: 70%;
-    /* margin: 0 auto; */
     display: block;
+    margin: 0 auto;
 }
 #logo_link {
     grid-column: 2/3;
@@ -47,20 +47,21 @@ header {
 .socials {
     text-decoration: none;
     color: #2E6171;
-    font-size: 4.5em;
-    padding-right: 10px;
+    font-size: 2.5em;
+    /* padding-right: 10px; */
 }
 #socials_icons {
     grid-column: 3/4;
     grid-row: 2/3;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 .date {
     background-color: #2E6171;
     color: #FFF4E8;
     font-family: 'Fjalla One', sans-serif;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     font-size: 1.2em;
 }
@@ -68,7 +69,7 @@ header {
     padding: 0;
     border: none;
     position: relative;
-    margin: 10px 0px;
+    margin: 20px 0px 0px 0px;
 }
 #hero_img {
     padding: 0;
@@ -83,12 +84,24 @@ button {
     font-weight: bold;
     border-radius: 10px;
     text-decoration: none;
-    padding: 10px 20px;
     border: none;
+    padding: 10px 20px;
+    letter-spacing: .1em;
 }
 #join_button {    
     position: absolute;
-    right: 10px;
+    right: 5px;
+    bottom: 10px;
+}
+#join_button2 {
+    margin-top: 20px;
+}
+#join_div p {
+    margin-top: 20px;
+}
+#join_button a {
+    text-decoration: none;
+    color: #E7D4C3;
 }
 .spotlight_div {
     padding: 10px;
@@ -100,23 +113,41 @@ button {
     margin: 0 auto;
     display: block;
 }
+#footer_logo_img {
+    margin: 0 auto;
+}
 #spotlight3 {
     display: none;
+}
+#spotlight1 {
+    margin-bottom: 25px;
+}
+#join_div {
+    display: none;
+}
+#spotlight_div {
+    padding: 10px;
 }
 
 /* nav nonsense */
 nav {
     grid-column: 1/2;
     grid-row: 2/3;
+    margin: 0 auto;
 }
 nav button{
     background: transparent;
     border: none;
-    margin: 0px 0px 0px 10px;
+    /* margin: 0px 0px 0px 10px; */
     color: #2E6171;
 }
 .material-symbols-outlined {
-    font-size: 1.5em;
+    font-size: 3.5em;
+    margin-left: 10px;
+}
+#hamburgerBtn {
+    margin: 0;
+    padding: 0;
 }
 nav ul {
     list-style-type: none;
@@ -165,6 +196,7 @@ footer p {
     color: #FFF4E8;
     padding: 20px;
     margin-top: 10px;
+    margin-bottom: 0px;
     font-weight: bold;
 }
 .join {
@@ -348,15 +380,21 @@ table {
 .categories {
     background-color: #E7D4C3;
     text-align: center;
-    margin: 10px;
-    padding: 10px;
+    margin: 20px;
+    padding: 10px 20px;
     border-radius: 5px;
+}
+.spotlight {
+    background-color: #FFF4E8;
 }
 
 /* WEATHER */
 #weather figcaption {
     font-family: "quicksand", sans-serif;
     color: #172A3A;
+}
+#weathericon {
+    width: 40%;
 }
 
 /* DISCOVER */
