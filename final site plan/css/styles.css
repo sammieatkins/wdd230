@@ -1,19 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Oxygen:wght@300&family=Quicksand:wght@300;400;700&display=swap');
 
 body {
     margin: 0;
-    /* background-color: #538966; */
+    background-color: #FAF5EF;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Quicksand', sans-serif;
-    /* font-weight: bold; */
+    /* font-family: 'Quicksand', sans-serif; */
+    /* font-family: 'Concert One', cursive; */
+    font-family: 'Oxygen', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
 }
 p {
     font-family: 'Quicksand', sans-serif;
+    line-height: 1.8em;
+    font-size: 1.2em;
 }
 nav {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
+    font-family: 'Oxygen', sans-serif;
+    text-transform: uppercase;
     background-color: #99C1B9;
     padding: 10px;
     letter-spacing: .2em;
@@ -23,10 +28,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     color: black;
-    padding: 10px;
-}
-#content {
-    background-color: #FAF5EF;
+    padding: 10px 20px;
 }
 .logo {
     width: 20%;
@@ -38,6 +40,8 @@ nav a {
 }
 main {
     text-align: center;
+    width: 75%;
+    margin: 0 auto;
 }
 main img {
     width: 50%;
@@ -49,16 +53,27 @@ footer {
     color: black;
     padding: 10px;
     text-align: center;
+    background-color: #99C1B9;
 }
 footer p {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
+    font-family: 'Oxygen', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin: 5px;
+}
+#logo_example {
+    margin-bottom: -4px;
 }
 
 /* COLOR SCHEME */
-#color {
-    background-color: #538966;
-    color: #FAF5EF;
+#green {
+    background-color: #99C1B9;
+    color: black;
+    padding: 10px;
+}
+#pink {
+    background-color: #E0A4AF;
+    color: black;
     padding: 10px;
 }
 
@@ -86,6 +101,7 @@ footer p {
     }
     nav a:hover {
         background-color: #FAF5EF;
+        padding: 10px 20px;
         color: black;
         border-radius: 5px;
     }
