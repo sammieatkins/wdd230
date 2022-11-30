@@ -2,12 +2,9 @@ const requestURL = "https://byui-cit230.github.io/lessons/lesson-09/data/latter-
 
 async function getProphets(requestURL) {
     const response = await fetch(requestURL);
-    console.log(response);
     if (response.ok) {
         const jsObject = await response.json();
-        console.log(jsObject);
         const prophets = jsObject["prophets"];
-        console.log(prophets);
         prophets.forEach(displayProphets)
     }
 };

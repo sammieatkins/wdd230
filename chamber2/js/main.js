@@ -26,6 +26,7 @@ if (now.getDay() == 1 || now.getDay() == 2) {
 // menu click event
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
+    console.log("hamburger has been clicked")
 }
 const x = document.querySelector("#hamburgerBtn");
 x.onclick = toggleMenu;

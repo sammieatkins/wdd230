@@ -71,7 +71,6 @@ function displayTable(business) {
     largeQuery = window.matchMedia("(min-width: 64em)");
     let row = document.createElement("tr");
     if (largeQuery.matches) {
-        console.log("largeQuery: True");
         let name = document.createElement("td");
         let address = document.createElement("td");
         let phone = document.createElement("td");
@@ -92,9 +91,7 @@ function displayTable(business) {
         // business_info.textContent = business.name + "\n" + business.address + "\n" + business.phone + "\n" + business.website;
         business_info.textContent = `${business.name}\r\n${business.address}\r\n${business.phone}\r\n${business.website}`;
         business_info.setAttribute('style', 'white-space: pre;');
-        console.log(business_info.textContent)
         row.appendChild(business_info);
-        console.log(business_info);
     }
     document.querySelector(".table").appendChild(row);
 }
