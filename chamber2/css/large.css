@@ -120,6 +120,12 @@
         grid-column: 1/2;
         grid-row: 2/3;
     }
+    #weathericon {
+        width: 40%;
+    }
+    #weather figure figcaption {
+        font-size: 1em;
+    }
     #join_div {
         grid-column: 1/2;
         grid-row: 3/4;
@@ -190,5 +196,4 @@
     .pictures {
         padding: 0px 10px;
     }
-
 }

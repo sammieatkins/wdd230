@@ -32,6 +32,7 @@ const io = new IntersectionObserver (
         io.observe(image);
     })
 
+
 // date since last visit
 let currDate = Date.now();
 

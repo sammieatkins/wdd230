@@ -65,26 +65,42 @@ function displayCards(item) {
     
     document.querySelector(".cards").appendChild(card);
 }
-function displayTable(item) {
+
+
+function displayTable(business) {
+    largeQuery = window.matchMedia("(min-width: 64em)");
     let row = document.createElement("tr");
-
-    let name = document.createElement("td");
-    let address = document.createElement("td");
-    let phone = document.createElement("td");
-    let website = document.createElement("td");
-
-    name.textContent = item.name;
-    address.textContent = item.address;
-    phone.textContent = item.phone;
-    website.textContent = item.website;
-
-    row.appendChild(name);
-    row.appendChild(address);
-    row.appendChild(phone);
-    row.appendChild(website); 
-    
+    if (largeQuery.matches) {
+        console.log("largeQuery: True");
+        let name = document.createElement("td");
+        let address = document.createElement("td");
+        let phone = document.createElement("td");
+        let website = document.createElement("td");
+        
+        name.textContent = business.name;
+        address.textContent = business.address;
+        phone.textContent = business.phone;
+        website.textContent = business.website;
+        
+        row.appendChild(name);
+        row.appendChild(address);
+        row.appendChild(phone);
+        row.appendChild(website);         
+    }
+    else {
+        let business_info = document.createElement("td");
+        // business_info.textContent = business.name + "\n" + business.address + "\n" + business.phone + "\n" + business.website;
+        business_info.textContent = `${business.name}\r\n${business.address}\r\n${business.phone}\r\n${business.website}`;
+        business_info.setAttribute('style', 'white-space: pre;');
+        console.log(business_info.textContent)
+        row.appendChild(business_info);
+        console.log(business_info);
+    }
     document.querySelector(".table").appendChild(row);
 }
+// largeQuery.addEventListener("change", displayTable)
+// let largeQuery = window.matchMedia("(min-width: 64em)");
+
 
 // // HOW TO REMOVE
 // // -- put all cards in a div and hide that
