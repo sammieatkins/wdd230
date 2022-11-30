@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Quicksand:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    /* background-color: #538966; */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+    /* font-weight: bold; */
+}
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+nav {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    background-color: #99C1B9;
+    padding: 10px;
+    letter-spacing: .2em;
+}
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+#content {
+    background-color: #FAF5EF;
+}
+.logo {
+    width: 20%;
+    margin: 0 auto;
+    display: block;
+}
+#logo_link {
+    margin: 0 auto;
+}
+main {
+    text-align: center;
+}
+main img {
+    width: 50%;
+}
+main p {
+    padding: 0px 30px 0px 30px;
+}
+footer {
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+footer p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+/* COLOR SCHEME */
+#color {
+    background-color: #538966;
+    color: #FAF5EF;
+    padding: 10px;
+}
+
+/* TYPOGRAPHY */
+#width {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+/* TARGET AUDIENCE */
+#business_owner {
+    padding-top: 20px;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 960px) {
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.2em;
+    }  
+    #content {
+        margin: auto;
+    }
+    nav a:hover {
+        background-color: #FAF5EF;
+        color: black;
+        border-radius: 5px;
+    }
+    main img {
+        width: 20%;
+    }
+}
