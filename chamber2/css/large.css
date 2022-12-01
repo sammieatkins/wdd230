@@ -1,6 +1,6 @@
 @media (min-width: 64em) {
     p {
-        font-size: 1em;
+        font-size: 1.1em;
     }
     button {
         font-size: 1em;
@@ -26,6 +26,10 @@
     nav ul li {
         justify-content: space-evenly;
     }
+    nav ul li:last-child a {
+        padding-bottom: 0px;
+    }
+    
     #socials_icons {
         grid-column: 3/4;
         grid-row: 2/3;
@@ -69,10 +73,10 @@
         font-size: 1.3em;
     }
     nav ul li a {
-        padding: 10px;
+        padding: 15px 20px;
     }
     nav ul li a:hover {
-        padding: 10px;
+        padding: 15px 20px;
         background-color: #FFF4E8;
         color: #2E6171;
     }
@@ -130,6 +134,7 @@
     #news {
         grid-column: 2/3;
         grid-row: 3/4;
+        margin-top: 0px;
     }
     .categories {
         margin: 0;
@@ -192,5 +197,17 @@
     }
     .pictures {
         padding: 0px 10px;
+    }
+
+    /* JOIN */
+    #join main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    form {
+        margin: auto;
+    }
+    #info h1 {
+        margin-top: 0px;
     }
 }
