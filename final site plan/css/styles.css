@@ -54,6 +54,7 @@ footer {
     padding: 10px;
     text-align: center;
     background-color: #99C1B9;
+    margin-top: 10px;
 }
 footer p {
     font-family: 'Oxygen', sans-serif;
@@ -105,7 +106,7 @@ footer p {
         color: black;
         border-radius: 5px;
     }
-    main img {
+    #logo_example {
         width: 20%;
     }
 }
