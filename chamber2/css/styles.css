@@ -103,11 +103,6 @@ button {
     text-decoration: none;
     color: #E7D4C3;
 }
-.spotlight_div {
-    padding: 10px;
-    height: 270px;
-    margin: 10px;
-}
 #footer_logo {
     width: 70%;
     margin: 0 auto;
@@ -134,6 +129,15 @@ footer a:hover {
 }
 #spotlight_div {
     padding: 10px;
+}
+#news a {
+    text-decoration: none;
+    color: #172A3A;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+#news a:hover {
+    color: #C84C09;
 }
 
 /* nav nonsense */
@@ -215,6 +219,11 @@ footer p {
 }
 .join {
     display: none;
+}
+.home_icon {
+    font-size: 2em;
+    /* color: #2E6171; */
+    color: #C84C09;
 }
 
 /* DISCOVER */

@@ -90,7 +90,8 @@
         padding: 0;
     }
     #join_button {
-        top: 10px;
+        top: 20px;
+        right: 20px;
     }
 
     #spotlight3 {
@@ -107,6 +108,7 @@
     #event {
         grid-column: 1/2;
         grid-row: 1/2;
+        padding: 10px 20px;
     }
     #hero {
         grid-column: 2/3;
@@ -130,18 +132,20 @@
     #join_div {
         grid-column: 1/2;
         grid-row: 3/4;
+        padding: 80px 50px;
     }
     #news {
         grid-column: 2/3;
         grid-row: 3/4;
         margin-top: 0px;
+        padding: 30px;
     }
     .categories {
         margin: 0;
     }
     .spotlight {
         margin: 10px 0px;
-        height: 395px;
+        height: 332px;
     }
     #spotlight1 {
         margin-top: 0px;
@@ -161,9 +165,6 @@
         border-top: none;
         border-bottom: none;
         margin: 0;
-        /* display: grid; */
-        /* grid-template-columns: 1fr 1fr; */
-        padding-top: 20px;
         font-weight: bold;
     }
     .footer_contact {
