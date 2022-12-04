@@ -178,6 +178,9 @@
         width: 400px;
     }
     label {
-        font-size: 2em;
+        font-size: 1.8em;
+    }
+    #join h2 {
+        font-size: 1.8em;
     }
 }

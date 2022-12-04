@@ -190,8 +190,11 @@
         width: 300px;
         height: 200px;
     }
+    #visitMessage {
+        margin-top: 30px;
+    }
     #discover picture img:hover {
-        transform: scale(1.1);
+        transform: scale(1.02);
     }
     .spotlight_div {
         background-color: #172A3A;
@@ -210,5 +213,10 @@
     }
     #info h1 {
         margin-top: 0px;
+    }
+
+    /* CONTACT */
+    #contact_form {
+        margin: 40px;
     }
 }
