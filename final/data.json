@@ -3,7 +3,7 @@
       {
         "name": "St. Louis Missouri Temple",
         "address": "12555 N Outer Forty Dr, St. Louis, MO 63141-8620 United States",
-        "phone": "(1) 314-514-1122",
+        "phone": "314-514-1122",
         "services": "Clothing rental available\nNo cafeteria available\nNo patron housing available\nDistribution center nearby",
         "img": "st_louis_temple_lds.jpeg",
         "history": "29 December 1990 - Announced, 30 October 1993 - Groundbreaking, 1 June 1997 - Dedicated",
@@ -12,7 +12,7 @@
       {
         "name": "Palmyra New York Temple",
         "address": "2720 Temple Rd, Palmyra, NY 14522-9573 United States",
-        "phone": "(1) 315-597-6001",
+        "phone": "315-597-6001",
         "services": "Clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
         "img": "palmyra_temple_lds.jpeg",
         "history": "21 February 1999 - Announced, 25 May 1999 - Groundbreaking, 6 April 2000 - Dedicated",
@@ -21,7 +21,7 @@
       {
         "name": "Nauvoo Illinois Temple",
         "address": "50 N Wells St, Nauvoo, IL 62354 United States",
-        "phone": "(1) 217-453-6252",
+        "phone": "217-453-6252",
         "services": "Clothing rental available, No cafeteria available, No patron housing available, No distribution center nearby",
         "img": "nauvoo_temple_lds.jpeg",
         "history": "4 April 1999 - Announced, 24 October 1999 - Groundbreaking, 27 June 2002 - Dedicated",
@@ -30,7 +30,7 @@
       {
         "name": "Rexburg Idaho Temple",
         "address": "750 S 2nd E, Rexburg, ID 83440-5404 United States",
-        "phone": "(1) 208-656-0880",
+        "phone": "208-656-0880",
         "services": "Clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
         "img": "rexburg_idaho_temple.jpeg",
         "history": "12 December 2003 - Announced, 30 July 2005 - Groundbreaking, 10 February 2008 - Dedicated",
