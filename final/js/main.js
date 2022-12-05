@@ -1,24 +1,23 @@
-
-function createFoot() {
-    var footer = document.createElement("FOOTER");
-    document.body.appendChild(f);
-    var p = document.createElement("P");
-    var txt = document.createTextNode("Copyright ©, 2019");
-    p.appendChild(txt);
-    f.appendChild(p);
-}
-createFoot();
-
 function makeFooter() {
-    var f = document.getElementsByTagName("footer");
+    var footer = document.getElementById("footer");
 
     var logo = document.createElement("img");
     var info = document.createElement("p");
+    var location = document.createElement("a");
 
     logo.setAttribute("src", "images/logo.png");
     logo.setAttribute("alt", "Temple Inn & Suites Logo");
-    info.textContent = "Temple Inn & Suites | Site Plan | Samantha Atkins | &copy; 2022";
+    logo.setAttribute("id", "footer_logo")
 
-    f.appendChild(logo);
+    info.innerHTML = "Temple Inn & Suites | Site Plan | Samantha Atkins | &copy; 2022";
+
+    location.innerHTML = " | &#128205;";
+    location.setAttribute("href", "https://goo.gl/maps/j4mHpQSnSeXCGteF7");
+    location.setAttribute("target", "blank")
+
+    info.appendChild(location);
+
+    footer.appendChild(logo);
+    footer.appendChild(info);
 }
 makeFooter();

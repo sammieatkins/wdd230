@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Oxygen:wght@300&family=Quicksand:wght@300;400;700&display=swap');
 
+/* ALL PAGES */
 body {
     margin: 0;
     background-color: #FAF5EF;
@@ -47,22 +48,37 @@ main img {
     width: 50%;
 }
 main p {
-    padding: 0px 30px 0px 30px;
-}
-footer {
-    color: black;
-    padding: 10px;
-    text-align: center;
-    background-color: #99C1B9;
+    padding: 0px 30px;
 }
 footer p {
     font-family: 'Oxygen', sans-serif;
     text-transform: uppercase;
     letter-spacing: .2em;
     margin: 5px;
+    color: black;
+    text-align: center;
+    background-color: #99C1B9;
+    padding: 10px;
+    margin: 0px;
 }
-#logo_example {
-    margin-bottom: -4px;
+#footer_logo {
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+}
+#footer a {
+    text-decoration: none;
+}
+
+/* HOME PAGE */
+#caption {
+    font-family: "quicksand", sans-serif;
+    line-height: 1.8em;
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+#weathericon {
+    width: 5%;
 }
 
 /* COLOR SCHEME */
@@ -104,8 +120,5 @@ footer p {
         padding: 10px 20px;
         color: black;
         border-radius: 5px;
-    }
-    #logo_example {
-        width: 20%;
     }
 }
