@@ -51,20 +51,21 @@ function displayCards(item) {
     services.textContent = item.services;
     history.textContent = item.history;
     closures.textContent = item.closures;
-    img.setAttribute("src", `../images/${item.img}`);
+    img.setAttribute("src", `images/${item.img}`);
     img.setAttribute("alt", item.name);
 
     card.appendChild(name);
+    card.appendChild(img);
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(services);
     card.appendChild(history);
     card.appendChild(closures);
-    card.appendChild(img);
     
     document.querySelector(".cards").appendChild(card);
 }
 
+// HOW TO BOLD NAME
 
 function displayTable(temple) {
     largeQuery = window.matchMedia("(min-width: 64em)");
@@ -80,11 +81,11 @@ function displayTable(temple) {
         name.textContent = temple.name;
         address.textContent = temple.address;
         phone.textContent = temple.phone;
-        services.textContent = item.services;
-        history.textContent = item.history;
-        closures.textContent = item.closures;
+        services.textContent = temple.services;
+        history.textContent = temple.history;
+        closures.textContent = temple.closures;
         
-        row.appendChild(name);
+        row.appendChild(name.style.fontWeight = 'bold');
         row.appendChild(address);
         row.appendChild(phone);  
         row.appendChild(services);
@@ -93,7 +94,6 @@ function displayTable(temple) {
     }
     else {
         let temple_info = document.createElement("td");
-        // business_info.textContent = business.name + "\n" + business.address + "\n" + business.phone + "\n" + business.website;
         temple_info.textContent = `${temple.name}\r\n${temple.address}\r\n${temple.phone}\r\n${temple.services}\r\n${temple.history}\r\n${temple.closures}`;
         temple_info.setAttribute('style', 'white-space: pre;');
         row.appendChild(temple_info);

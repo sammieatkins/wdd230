@@ -5,7 +5,7 @@ function makeFooter() {
     var info = document.createElement("p");
     var location = document.createElement("a");
 
-    logo.setAttribute("src", "../images/logo.png");
+    logo.setAttribute("src", "images/logo.png");
     logo.setAttribute("alt", "Temple Inn & Suites Logo");
     logo.setAttribute("id", "footer_logo")
 

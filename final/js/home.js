@@ -10,3 +10,16 @@ const getWeather = async () => {
     document.querySelector("#caption").textContent = description;
   };
 getWeather();
+
+const requestURL = "https://sammieatkins.github.io/wdd230/final/data.json";
+
+async function getBusinesses(requestURL) {
+    const response = await fetch(requestURL);
+    console.log(response);
+    if (response.ok) {
+        const jsObject = await response.json();
+        console.log(jsObject);
+        const temples = jsObject["temples"];
+        console.log(temples);     
+    };
+};
