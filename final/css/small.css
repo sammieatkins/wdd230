@@ -68,6 +68,17 @@ footer p {
     text-decoration: none;
     color: black;
 }
+button {
+    background-color: #E0A4AF;
+    color: #FAF5EF;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    letter-spacing: .1em;
+}
 
 /* HOME PAGE */
 #caption {
@@ -79,7 +90,7 @@ footer p {
 #weathericon {
     width: 5%;
 }
-#content main div {
+#home main div {
     background-color: #E0A4AF;
     background-color: #99C1B9;
     background-color: #F5ECE0;
@@ -88,28 +99,65 @@ footer p {
     border-radius: 5px;
 }
 
-/* COLOR SCHEME */
-#green {
-    background-color: #99C1B9;
-    color: black;
-    padding: 10px;
+/* TEMPLES */
+#temples {
+    background-color: #FAF5EF;
 }
-#pink {
-    background-color: #E0A4AF;
-    color: black;
-    padding: 10px;
+#temples main {
+    display: block;
+}
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card {
+    margin: 5px;
+    padding: 5px 20px 10px 20px;
+    font-size: 2em;
+}
+#list {
+    margin: 5px;
+    padding: 5px 20px 10px 20px;
+    font-size: 2em;
 }
 
-/* TYPOGRAPHY */
-#width {
-    width: 50%;
-    margin: auto;
-    padding-bottom: 20px;
+/* TEMPLES CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.cards section {
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    background-color: #E7D4C3;
+    border-radius: 5px;
+}
+h2, h1 {
+    text-align: center;
+}
+#temples main img {
+    max-height: 85px;
+    min-height: 80px;
 }
 
-/* TARGET AUDIENCE */
-#business_owner {
-    padding-top: 20px;
+/* TEMPLES TABLE */
+td, th {
+    padding: 5px;
+}
+table, td, th {
+    border-collapse: collapse;
+    padding: 15px;
+}
+tr:nth-child(odd) {
+    background-color: #E7D4C3;
+}
+table {
+    margin: 20px auto;
 }
 
 /* MEDIA QUERY */
@@ -119,7 +167,7 @@ footer p {
         justify-content: space-evenly;
         font-size: 1.2em;
     }  
-    #content {
+    #home {
         margin: auto;
     }
     nav a:hover {
