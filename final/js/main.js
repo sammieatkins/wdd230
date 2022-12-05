@@ -11,7 +11,9 @@ function makeFooter() {
 
     info.innerHTML = "Temple Inn & Suites | Site Plan | Samantha Atkins | &copy; 2022";
 
-    location.innerHTML = " | &#128205;";
+    // <i class="fa-solid fa-location-dot"></i>
+    // location.innerHTML = " | &#128205;";
+    location.innerHTML = ' | <i class="fa-solid fa-location-dot"></i>';
     location.setAttribute("href", "https://goo.gl/maps/j4mHpQSnSeXCGteF7");
     location.setAttribute("target", "blank")
 

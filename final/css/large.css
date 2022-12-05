@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Oxygen:wght@300&family=Quicksand:wght@300;400;700&display=swap');
+
+@media (min-width: 64em)  {
+    main {
+        width: 75%;
+    }
+    .logo {
+        width: 20%;
+    }
+    footer p {
+        padding: 10px;
+    }
+    #footer_logo {
+        width: 15%;
+    }
+}
