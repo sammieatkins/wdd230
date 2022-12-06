@@ -1,0 +1,4 @@
+TEMPLES
+- How to make json file have multiple lines (services section)
+- How to bold the name in table view
+

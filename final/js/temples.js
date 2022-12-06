@@ -65,8 +65,6 @@ function displayCards(item) {
     document.querySelector(".cards").appendChild(card);
 }
 
-// HOW TO BOLD NAME
-
 function displayTable(temple) {
     largeQuery = window.matchMedia("(min-width: 64em)");
     let row = document.createElement("tr");
