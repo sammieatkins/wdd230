@@ -20,6 +20,26 @@ async function getBusinesses(requestURL) {
         const jsObject = await response.json();
         console.log(jsObject);
         const temples = jsObject["temples"];
-        console.log(temples);     
+        console.log(temples);  
+        
+        temples.forEach(temple => {
+          displayTemple(temple)
+      });
     };
 };
+
+function displayTemple(item) {
+  let div = document.createElement("div")
+  let img = document.createElement("img");
+  let name = document.createElement("h2");
+  let description = document.createElement("p");
+
+  img.setAttribute("src", `images/${item.img}`);
+  img.setAttribute("alt", item.name);
+  name.textContent = item.name;
+  description.textContent = item.history;
+
+  div.appendChild(img);
+  div.appendChild(name);
+  div.appendChild(description);
+}
