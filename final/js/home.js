@@ -72,26 +72,24 @@ async function getTemples(requestURL) {
         const jsObject = await response.json();
         console.log(jsObject);
         const temples = jsObject["temples"];
-        console.log(temples);  
+        console.log(temples);
         
-        
-        temples.forEach(temple => {
-          displayTemple(temple, random_index)
-      });
+        console.log(temples[random_index]);
+        displayTemple(temples[random_index]);
     };
 };
 getTemples(requestURL);
 
-function displayTemple(item, index) {
+function displayTemple(item) {
   let div = document.getElementById("spotlight_info")
   let img = document.createElement("img");
   let name = document.createElement("h2");
   let description = document.createElement("p");
 
   img.setAttribute("src", `images/${item.img}`);
-  img.setAttribute("alt", item[index].name);
-  name.textContent = item[index].name;
-  description.textContent = item[index].history;
+  img.setAttribute("alt", item.name);
+  name.textContent = item.name;
+  description.textContent = item.history;
 
   div.appendChild(img);
   div.appendChild(name);

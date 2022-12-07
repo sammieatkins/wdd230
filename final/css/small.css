@@ -20,8 +20,15 @@
     display: none;
 }
 
-/* Next & previous buttons */
-.prev, .next {
+.prev {
+    left: 5px;
+    text-shadow: white -5px 0px 3px;
+}
+.next  {
+    right: 5px;
+    text-shadow: white 5px 0px 3px;
+}
+.arrow {    
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -150,9 +157,9 @@ main {
     width: 100%;
     margin: 0 auto;
 }
-main img {
+/* main img {
     width: 50%;
-}
+} */
 main p {
     padding: 0px 30px;
 }
@@ -214,6 +221,9 @@ button {
     text-decoration: none;
     color: black;
 }
+#spotlight_info img {
+    width: 90%;
+}
 
 /* TEMPLES */
 #temples {
@@ -221,6 +231,9 @@ button {
 }
 #temples main {
     display: block;
+}
+#temples main img {
+    width: 90%;
 }
 #buttons {
     display: flex;
@@ -257,6 +270,7 @@ h2, h1 {
 
 /* TEMPLES TABLE */
 table {
+    width: 90%;
     margin: 20px auto;
     text-align: left;
     font-family: 'Quicksand', sans-serif;

@@ -83,7 +83,7 @@ function displayTable(temple) {
         history.textContent = temple.history;
         closures.textContent = temple.closures;
         
-        row.appendChild(name.style.fontWeight = 'bold');
+        // row.appendChild(name.style.fontWeight = 'bold');
         row.appendChild(address);
         row.appendChild(phone);  
         row.appendChild(services);
