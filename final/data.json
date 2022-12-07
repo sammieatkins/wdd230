@@ -2,7 +2,7 @@
     "temples": [
       {
         "name": "St. Louis Missouri Temple",
-        "address": "12555 N Outer Forty Dr, St. Louis, MO 63141-8620 United States",
+        "address": "12555 N Outer Forty Dr, St. Louis, MO 63141 United States",
         "phone": "314-514-1122",
         "services": "Clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
         "img": "st_louis_temple_lds.jpeg",
@@ -11,7 +11,7 @@
       },
       {
         "name": "Palmyra New York Temple",
-        "address": "2720 Temple Rd, Palmyra, NY 14522-9573 United States",
+        "address": "2720 Temple Rd, Palmyra, NY 14522 United States",
         "phone": "315-597-6001",
         "services": "Clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
         "img": "palmyra_temple_lds.jpeg",
@@ -29,7 +29,7 @@
       },
       {
         "name": "Rexburg Idaho Temple",
-        "address": "750 S 2nd E, Rexburg, ID 83440-5404 United States",
+        "address": "750 S 2nd E, Rexburg, ID 83440 United States",
         "phone": "208-656-0880",
         "services": "Clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
         "img": "rexburg_idaho_temple.jpeg",

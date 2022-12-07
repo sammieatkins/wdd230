@@ -10,6 +10,7 @@ HOME
     - Pictures not 100% of screen
     - Arrows not where they should be
     - Add button to make a reservation (pink accent color)
+    - Add more pictures?
 
 ------- COSMETIC -------
 ALL PAGES
