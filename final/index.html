@@ -27,7 +27,43 @@
             </nav>
         </header>
         <main>
-            <div id="temple">
+            <div id="slideshow">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <p class="numbertext">1 / 4</p>
+                        <img src="images/nauvoo_temple_lds.jpeg" alt="Nauvoo Illinois Temple">
+                        <h1 class="text">Nauvoo Illinois Temple</h1>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <p class="numbertext">2 / 4</p>
+                        <img src="images/palmyra_temple_lds.jpeg" alt="Palmyra New York Temple">
+                        <h1 class="text">Palmyra New York Temple</h1>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <p class="numbertext">3 / 4</p>
+                        <img src="images/st_louis_temple_lds.jpeg" alt="St. Louis Missouri Temple">
+                        <h1 class="text">St. Louis Missouri Temple</h1>
+                    </div>           
+
+                    <div class="mySlides fade">
+                        <p class="numbertext">3 / 4</p>
+                        <img src="images/rexburg_idaho_temple.jpeg" alt="Rexburg Idaho Temple">
+                        <h1 class="text">Rexburg Idaho Temple</h1>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>            
+            <div class="category" id="temple">
                 <h1>Temple Spotlight</h1>
                 <div id="spotlight_info"></div>
                 <h2>Weather</h2>
@@ -35,11 +71,11 @@
                 <p>Condition: <span id="caption"></span></p>
                 <p id="humidity">Humidity: <span id="humidity_span"></span>%</p>
             </div>
-            <div id="purpose">
+            <div class="category" id="purpose">
                 <h1>Our Purpose</h1>
-                <p>The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. The owner-operated company caters to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons. The hotel accommodations and services are available to anyone willing to abide by the terms and policies outlined by the company. The overall goal of the website project is to promote and provide information about the specialized services that this hotel chain offers to meet the needs of temple patrons who come to serve in the temple or who participate in events such as sealings, weddings, receptions, and youth trips.</p>
+                <p>The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. We cater to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons.</p>
             </div>
-            <div id="contact_info">
+            <div class="category" id="contact_info">
                 <h1>Contact Us</h1>
                 <p>123-456-7890</p>
                 <p>temples@gmail.com</p>                
