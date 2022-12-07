@@ -84,6 +84,7 @@ function displayTable(temple) {
         closures.textContent = temple.closures;
         
         // row.appendChild(name.style.fontWeight = 'bold');
+        row.appendChild(name);
         row.appendChild(address);
         row.appendChild(phone);  
         row.appendChild(services);
