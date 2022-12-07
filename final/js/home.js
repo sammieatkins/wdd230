@@ -13,7 +13,9 @@ getWeather();
 
 const requestURL = "https://sammieatkins.github.io/wdd230/final/data.json";
 
-async function getBusinesses(requestURL) {
+let random_index = Math.floor(Math.random() * 4);
+
+async function getTemples(requestURL) {
     const response = await fetch(requestURL);
     console.log(response);
     if (response.ok) {
@@ -22,22 +24,24 @@ async function getBusinesses(requestURL) {
         const temples = jsObject["temples"];
         console.log(temples);  
         
+        
         temples.forEach(temple => {
-          displayTemple(temple)
+          displayTemple(temple, random_index)
       });
     };
 };
+getTemples(requestURL);
 
-function displayTemple(item) {
-  let div = document.createElement("div")
+function displayTemple(item, index) {
+  let div = document.getElementById("spotlight_info")
   let img = document.createElement("img");
   let name = document.createElement("h2");
   let description = document.createElement("p");
 
   img.setAttribute("src", `images/${item.img}`);
-  img.setAttribute("alt", item.name);
-  name.textContent = item.name;
-  description.textContent = item.history;
+  img.setAttribute("alt", item[index].name);
+  name.textContent = item[index].name;
+  description.textContent = item[index].history;
 
   div.appendChild(img);
   div.appendChild(name);

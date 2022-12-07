@@ -1,6 +1,6 @@
 const requestURL = "https://sammieatkins.github.io/wdd230/final/data.json";
 
-async function getBusinesses(requestURL) {
+async function getTemples(requestURL) {
     const response = await fetch(requestURL);
     console.log(response);
     if (response.ok) {
@@ -32,7 +32,7 @@ async function getBusinesses(requestURL) {
     };
 };
 
-getBusinesses(requestURL);
+getTemples(requestURL);
 
 function displayCards(item) {
     let card = document.createElement("section");

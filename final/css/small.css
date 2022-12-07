@@ -49,6 +49,12 @@ main img {
 main p {
     padding: 0px 30px;
 }
+.footer_social_icons {
+    font-size: 2em;
+}
+.social_icon {
+    margin: 20px;
+}
 footer p {
     font-family: 'Oxygen', sans-serif;
     text-transform: uppercase;
@@ -82,9 +88,6 @@ button {
 
 /* HOME PAGE */
 #caption {
-    font-family: "quicksand", sans-serif;
-    line-height: 1.8em;
-    font-size: 1.2em;
     text-transform: capitalize;
 }
 #weathericon {
@@ -94,9 +97,14 @@ button {
     background-color: #E0A4AF;
     background-color: #99C1B9;
     background-color: #F5ECE0;
+    background-color: #F5ECEF;
     padding: 10px;
     margin: 20px;
     border-radius: 5px;
+}
+#address a {
+    text-decoration: none;
+    color: black;
 }
 
 /* TEMPLES */
@@ -137,10 +145,6 @@ button {
 }
 h2, h1 {
     text-align: center;
-}
-#temples main img {
-    max-height: 85px;
-    min-height: 80px;
 }
 
 /* TEMPLES TABLE */

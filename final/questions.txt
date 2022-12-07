@@ -1,4 +1,11 @@
+------- TECHNICAL -------
 TEMPLES
 - How to make json file have multiple lines (services section)
 - How to bold the name in table view
 
+HOME
+- How to get spotlight randomly generated from json file
+- Padding around main to get 20px around edge
+
+------- COSMETIC -------
+- Background color to separate divs
