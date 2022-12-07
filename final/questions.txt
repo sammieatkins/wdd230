@@ -1,9 +1,6 @@
 // QUESTIONS //
 
 ------- TECHNICAL -------
-ALL PAGES
-- Do I need a hamburger button or can I leave it the way it is?
-
 HOME
 - How to get spotlight randomly generated from json file
 - Padding around main to get 20px around edge

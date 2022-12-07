@@ -72,16 +72,25 @@ function displayTable(temple) {
         let name = document.createElement("td");
         let address = document.createElement("td");
         let phone = document.createElement("td");
-        let services = document.createElement("p");
+        let services = document.createElement("ul");
+        let services1 = document.createElement("li");
+        let services2 = document.createElement("li");
+        let services3 = document.createElement("li");
+        let services4 = document.createElement("li");
         let history = document.createElement("p");
         let closures = document.createElement("p");
         
         name.textContent = temple.name;
         address.textContent = temple.address;
         phone.textContent = temple.phone;
-        services.textContent = temple.services;
+        
         history.textContent = temple.history;
         closures.textContent = temple.closures;
+
+        services.appendChild(services1);
+        services.appendChild(services2);
+        services.appendChild(services3);
+        services.appendChild(services4);
         
         // row.appendChild(name.style.fontWeight = 'bold');
         row.appendChild(name);
