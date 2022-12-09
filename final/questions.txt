@@ -3,17 +3,6 @@
 * = High Priority (more * = more important)
 
 ------- TECHNICAL -------
-ALL PAGES
-- Smaller screens the footer has lines btwn each paragraph. Is that just the inspect tool?
-
-HOME
-- * Temple spotlight: trying to make it so it can't do the same one twice
-    SLIDESHOW
-    - *** How to make pictures same height? (max-height didn't work. both sizes say height is 1000px) (changing image sizes also 
-    didn't work)
-    - * Can I have both the automatic and the interactable slideshow? (might be multiple slideshows section of w3 schools tutorial)
-        - https://www.w3schools.com/howto/howto_js_slideshow.asp
-
 TEMPLES
 - Info: how to find session and ordinance schedule? Can that just be a link?
 - * How to make json file have multiple lines (services section) !!!!
@@ -24,12 +13,6 @@ SERVICES
   - ** Title? What is supposed to be on that page? Instructions unclear
 
 ------- COSMETIC -------
-ALL PAGES
-- Footer contact info centered by bar or text?
-
-HOME
-- Is the Contact Us section pointless? Also should I rearrange it so that contact section isn't right next to the footer? (same
-  info)
 
 
 // TO DO //

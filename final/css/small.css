@@ -100,7 +100,7 @@ button {
     margin-top: 20px;
 }
 .slideshow-container img {
-    width: 100%;
+    width: 60%;
     border-radius: 5px;
 }
 /* Hide the images by default */
@@ -120,7 +120,7 @@ button {
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
+    margin-top: -65px;
     padding: 16px;
     color: #E0A4AF;
     font-weight: bold;
