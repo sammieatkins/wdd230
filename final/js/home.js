@@ -1,6 +1,41 @@
+let random_index = Math.floor(Math.random() * 4);
+
+// make sure temple doesn't show up twice
+function randomItem(not) {
+  let random_index = Math.floor(Math.random() * 4);
+  if (random_index === not) {
+      console.log("Repeated");
+      return randomItem(not);
+  }
+  return random_index;
+}
+randomItem(random_index);
+
+
 // WEATHER
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=4407066&appid=4e6e434931c6cfa7afaeb300bacaac2a";
+const stlApiURL = "https://api.openweathermap.org/data/2.5/weather?id=4407066&appid=4e6e434931c6cfa7afaeb300bacaac2a";
+const palmyraApiURL = "https://api.openweathermap.org/data/2.5/weather?id=5102378&appid=4e6e434931c6cfa7afaeb300bacaac2a";
+const nauvooApiURL = "https://api.openweathermap.org/data/2.5/weather?id=4903330&appid=4e6e434931c6cfa7afaeb300bacaac2a";
+const rexburgApiURL = "https://api.openweathermap.org/data/2.5/weather?id=5605242&appid=4e6e434931c6cfa7afaeb300bacaac2a";
+
 const getWeather = async () => {
+    weather = document.getElementById("weather");
+    if (random_index == 0) {
+      apiURL = stlApiURL;
+      weather.textContent = "Weather in St. Louis";
+    }
+    else if (random_index == 1) {
+      apiURL = palmyraApiURL;
+      weather.textContent = "Weather in Palmyra";
+    }
+    else if (random_index == 2) {
+      apiURL = nauvooApiURL;
+      weather.textContent = "Weather in Nauvoo";
+    }
+    else {
+      apiURL = rexburgApiURL;
+      weather.textContent = "Weather in Rexburg";
+    }
     const response = await fetch(apiURL);
     const jsObject = await response.json();
     console.log(jsObject);
@@ -62,8 +97,6 @@ function showSlides(n) {
 
 // TEMPLE SPOTLIGHT
 const requestURL = "https://sammieatkins.github.io/wdd230/final/data.json";
-
-let random_index = Math.floor(Math.random() * 4);
 
 async function getTemples(requestURL) {
     const response = await fetch(requestURL);

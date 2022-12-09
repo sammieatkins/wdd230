@@ -1,40 +1,53 @@
 // QUESTIONS //
 
+* = High Priority (more * = more important)
+
 ------- TECHNICAL -------
+ALL PAGES
+- Smaller screens the footer has lines btwn each paragraph. Is that just the inspect tool?
+
 HOME
-- How to get spotlight randomly generated from json file
-- Padding around main to get 20px around edge
+- * Temple spotlight: trying to make it so it can't do the same one twice
     SLIDESHOW
-    - Pictures not 100% of screen
-    - How to make pictures same height? (max-height didn't work. both sizes say height is 1000px)
-    - Arrows not where they should be
-    - Add more pictures?
-    - Can I have both the automatic and the interactable slideshow? (might be multiple slideshows section of w3 schools tutorial)
+    - *** How to make pictures same height? (max-height didn't work. both sizes say height is 1000px) (changing image sizes also 
+    didn't work)
+    - * Can I have both the automatic and the interactable slideshow? (might be multiple slideshows section of w3 schools tutorial)
         - https://www.w3schools.com/howto/howto_js_slideshow.asp
 
 TEMPLES
-- How to make json file have multiple lines (services section)
-- How to bold the name in table view (https://stackoverflow.com/questions/32531609/how-to-add-bold-text-using-javascript)
+- Info: how to find session and ordinance schedule? Can that just be a link?
+- * How to make json file have multiple lines (services section) !!!!
+- * How to bold the name in table view (https://stackoverflow.com/questions/32531609/how-to-add-bold-text-using-javascript)
 
-MISSIONARY
-- Title? What is supposed to be on that page? Instructions unclear
+SERVICES
+  MISSIONARY
+  - ** Title? What is supposed to be on that page? Instructions unclear
 
 ------- COSMETIC -------
 ALL PAGES
-- Add phone number and email to footer?
+- Footer contact info centered by bar or text?
 
 HOME
-- What background color should I use to separate divs
 - Is the Contact Us section pointless? Also should I rearrange it so that contact section isn't right next to the footer? (same
   info)
 
 
 // TO DO //
 (make all the pages lol)
+ALL PAGES 
+- Include the last modified date of the page in the footer using JavaScript.
 HOME
 - Edit images for smaller screen sizes
     SLIDESHOW
-    - Add button to make a reservation (pink accent color)
+    - **** Add button to make a reservation (pink accent color) - top right or bottom left?
+    - Pictures too big?
+
+TEMPLES
+- Like button
+- You may elect to have additional information shown upon clicking a card.
 
 THANK YOU
-- Add something to separate logos
+- Add something to separate logos (?)
+
+RESOURCE/ATTRIBUTION PAGE
+- make lol (references outside content, if necessary, as a link in the footer)

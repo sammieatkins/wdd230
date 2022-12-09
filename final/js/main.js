@@ -5,6 +5,11 @@ function makeFooter() {
 
     var info = document.createElement("p");
 
+    var contact = document.createElement("div");
+    var phone_email = document.createElement("div");
+    var phone = document.createElement("p");
+    var email = document.createElement("p");
+
     var location = document.createElement("p");
     var locationLink = document.createElement("a");
 
@@ -20,29 +25,36 @@ function makeFooter() {
 
     info.innerHTML = "Temple Inn & Suites | Samantha Atkins | WDD 230 | &copy; 2022";
 
+    // CONTACT
+    contact.setAttribute("id", "footer_contact")
+    phone_email.setAttribute("id", "phone_email")
+    phone.textContent = "123-456-7890 ";
+    email.textContent = "temples@gmail.com ";
+
     // LOCATION
+    location.setAttribute("id", "location")
     locationLink.innerHTML = '<i class="fa-solid fa-location-dot"></i> 4800 Montgomery Ln #300, Bethesda, MD 20814';
     locationLink.setAttribute("href", "https://goo.gl/maps/j4mHpQSnSeXCGteF7");
     locationLink.setAttribute("target", "blank");
 
     // SOCIALS
     facebook.innerHTML = '<i class="fa-brands fa-facebook-f"></i>';
-    facebook.setAttribute("class", "social_icon");
+    facebook.setAttribute("class", "footer_social_icon");
     facebook.setAttribute("href", "https://www.facebook.com/");
     facebook.setAttribute("target", "blank");
 
     twitter.innerHTML = '<i class="fa-brands fa-twitter"></i>';
-    twitter.setAttribute("class", "social_icon");
+    twitter.setAttribute("class", "footer_social_icon");
     twitter.setAttribute("href", "https://www.twitter.com/");
     twitter.setAttribute("target", "blank");
 
     instagram.innerHTML = '<i class="fa-brands fa-instagram"></i>';
-    instagram.setAttribute("class", "social_icon");
+    instagram.setAttribute("class", "footer_social_icon");
     instagram.setAttribute("href", "https://www.instagram.com/");
     instagram.setAttribute("target", "blank");
 
     pinterest.innerHTML = '<i class="fa-brands fa-pinterest-p"></i>';
-    pinterest.setAttribute("class", "social_icon");
+    pinterest.setAttribute("class", "footer_social_icon");
     pinterest.setAttribute("href", "https://www.pinterest.com/");
     pinterest.setAttribute("target", "blank");
 
@@ -57,9 +69,14 @@ function makeFooter() {
     socialIcons.appendChild(pinterest);
 
 
+    phone_email.appendChild(phone);
+    phone_email.appendChild(email);
+    contact.appendChild(phone_email);
+    contact.appendChild(location);
+
     footer.appendChild(logo);
     footer.appendChild(socialIcons);
-    footer.appendChild(location);
+    footer.appendChild(contact);
     footer.appendChild(info);
 }
 makeFooter();

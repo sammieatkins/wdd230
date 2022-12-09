@@ -56,30 +56,36 @@
                     <a class="prev arrow" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next arrow" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-                <div>
+                <div id="dots">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                     <span class="dot" onclick="currentSlide(4)"></span>
                 </div>
             </div>            
-            <div class="category" id="temple">
-                <h1>Temple Spotlight</h1>
-                <div id="spotlight_info"></div>
-                <h2>Weather</h2>
-                <p id="degrees">Temperature: <span id="current-temp">40</span>&#176;</p>
-                <p>Condition: <span id="caption"></span></p>
-                <p id="humidity">Humidity: <span id="humidity_span"></span>%</p>
-            </div>
             <div class="category" id="purpose">
                 <h1>Our Purpose</h1>
                 <p>The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. We cater to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons.</p>
+            </div>
+            <div class="category" id="temple">
+                <h1>Temple Spotlight</h1>
+                <div id="spotlight_info"></div>
+                <h2 id="weather"></h2>
+                <p id="degrees">Temperature: <span id="current-temp">40</span>&#176;</p>
+                <p>Condition: <span id="caption"></span></p>
+                <p id="humidity">Humidity: <span id="humidity_span"></span>%</p>
             </div>
             <div class="category" id="contact_info">
                 <h1>Contact Us</h1>
                 <p>123-456-7890</p>
                 <p>temples@gmail.com</p>                
-                <p id="address"><a href="https://goo.gl/maps/j4mHpQSnSeXCGteF7" target="blank"><i class="fa-solid fa-location-dot"></i> 4800 Montgomery Ln #300, Bethesda, MD 20814</a></p>
+                <p id="address"><a href="https://goo.gl/maps/j4mHpQSnSeXCGteF7" target="blank"><i class="fa-solid fa-location-dot"></i> 4800 Montgomery Ln #300<br>Bethesda, MD 20814</a></p>
+                <p class="social_icons">
+                    <a class="social_icon" href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="social_icon" href="https://www.twitter.com/" target="blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="social_icon" href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="social_icon" href="https://www.pinterest.com/" target="blank"><i class="fa-brands fa-pinterest-p"></i></a>
+                </p>
                 <!-- <div id="phone_gmail">
                     <p>123-456-7890</p>
                     <p>temples@gmail.com</p>
