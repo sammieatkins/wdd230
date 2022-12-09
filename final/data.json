@@ -13,7 +13,7 @@
         "name": "Palmyra New York Temple",
         "address": "2720 Temple Rd, Palmyra, NY 14522 United States",
         "phone": "315-597-6001",
-        "services": [{"service1": "Clothing rental available"},{"service2": "No cafeteria available"},{"service3": "No patron housing available"},{"service4": "Distribution center nearby"}],
+        "services": ["Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"],
         "img": "palmyra_temple_lds.jpg",
         "history": "21 February 1999 - Announced, 25 May 1999 - Groundbreaking, 6 April 2000 - Dedicated",
         "closures": "2022 Closures: Saturday, 24 December 2022; Saturday, 31 December 2022"
@@ -22,7 +22,7 @@
         "name": "Nauvoo Illinois Temple",
         "address": "50 N Wells St, Nauvoo, IL 62354 United States",
         "phone": "217-453-6252",
-        "services": [{"service1": "Clothing rental available"},{"service2": "No cafeteria available"},{"service3": "No patron housing available"},{"service4": "No distribution center nearby"}],
+        "services": ["Clothing rental available","No cafeteria available","No patron housing available","No distribution center nearby"],
         "img": "nauvoo_temple_lds.jpg",
         "history": "4 April 1999 - Announced, 24 October 1999 - Groundbreaking, 27 June 2002 - Dedicated",
         "closures": "2022 Closures: Saturday, 24 December 2022; Saturday, 31 December 2022"
@@ -31,7 +31,7 @@
         "name": "Rexburg Idaho Temple",
         "address": "750 S 2nd E, Rexburg, ID 83440 United States",
         "phone": "208-656-0880",
-        "services": [{"service1": "Clothing rental available"},{"service2": "No cafeteria available"},{"service3": "No patron housing available"},{"service4": "Distribution center nearby"}],
+        "services": ["Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"],
         "img": "rexburg_idaho_temple.jpg",
         "history": "12 December 2003 - Announced, 30 July 2005 - Groundbreaking, 10 February 2008 - Dedicated",
         "closures": "2022 Closures: Saturday, 24 December 2022; Saturday, 31 December 2022"

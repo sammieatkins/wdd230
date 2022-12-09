@@ -65,21 +65,21 @@ function displayCards(item) {
     document.querySelector(".cards").appendChild(card);
 }
 
+let name = document.createElement("td");
+let address = document.createElement("td");
+let phone = document.createElement("td");
+let list = document.createElement("ul");
+let history = document.createElement("p");
+let closures = document.createElement("p");
 function displayTable(temple) {
     largeQuery = window.matchMedia("(min-width: 64em)");
     let row = document.createElement("tr");
     if (largeQuery.matches) {
-        let name = document.createElement("td");
-        let address = document.createElement("td");
-        let phone = document.createElement("td");
-        let services = document.createElement("ul");
-        let services1 = document.createElement("li");
-        let services2 = document.createElement("li");
-        let services3 = document.createElement("li");
-        let services4 = document.createElement("li");
-        let history = document.createElement("p");
-        let closures = document.createElement("p");
         
+        console.log(temple.services)
+        temple.services.forEach(getServices) 
+
+
         name.textContent = temple.name;
         address.textContent = temple.address;
         phone.textContent = temple.phone;
@@ -87,16 +87,13 @@ function displayTable(temple) {
         history.textContent = temple.history;
         closures.textContent = temple.closures;
 
-        services.appendChild(services1);
-        services.appendChild(services2);
-        services.appendChild(services3);
-        services.appendChild(services4);
+
         
         // row.appendChild(name.style.fontWeight = 'bold');
         row.appendChild(name);
         row.appendChild(address);
         row.appendChild(phone);  
-        row.appendChild(services);
+        row.appendChild(list);
         row.appendChild(history);
         row.appendChild(closures);      
     }
@@ -108,3 +105,24 @@ function displayTable(temple) {
     }
     document.querySelector(".table").appendChild(row);
 }
+
+function getServices(item) {
+    let service = document.createElement("li");
+    service.textContent = item;
+    list.appendChild(service);
+}
+
+// let services1 = document.createElement("li");
+// let services2 = document.createElement("li");
+// let services3 = document.createElement("li");
+// let services4 = document.createElement("li");
+
+// services1.textContent = temple.services[0];
+// services2.textContent = temple.services[1];
+// services3.textContent = temple.services[2];
+// services4.textContent = temple.services[3];
+
+// services.appendChild(services1);
+// services.appendChild(services2);
+// services.appendChild(services3);
+// services.appendChild(services4);
