@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/main.js"></script>
+    <script defer src="js/reservation.js"></script>
     <title>Reservation | Temple Inn & Suites</title>
 </head>
 <body>
@@ -40,8 +41,7 @@
                     <input id="email" type="email" name="email">
                     <label for="phone"><i class="fa-solid fa-asterisk asterisk"></i> Cell Number:</label>
                     <input id="phone" type="tel" name="cell" required>
-    
-                    <!-- <label for="address"><i class="fa-solid fa-asterisk asterisk"></i> Your Address:</label> -->
+
                     <div>
                         <label for="street-address"><i class="fa-solid fa-asterisk asterisk"></i> Street address</label>
                         <input type="text" id="street-address" name="street-address" autocomplete="street-address" required enterkeyhint="next"></input>
@@ -339,8 +339,16 @@
     
                     <input id="date" type="hidden" name="todaydate">
                 </div>
-
+                
                 <input id="submit" type="submit" value="Submit">                
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Some text in the Modal..</p>
+                    </div>
+                </div>
             </form>
         </main>
         <footer id="footer"></footer>

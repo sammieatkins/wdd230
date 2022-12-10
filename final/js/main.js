@@ -19,10 +19,18 @@ function makeFooter() {
     var instagram = document.createElement("a");
     var pinterest = document.createElement("a");
 
+    var modified = document.createElement("p");
+
+    var sources = document.createElement("a");
+
     logo.setAttribute("src", "images/logo.png");
     logo.setAttribute("alt", "Temple Inn & Suites Logo");
     logo.setAttribute("id", "footer_logo");
 
+    // SOURCES
+    sources.innerHTML = " | Sources";
+    sources.setAttribute("href", "sources.html")
+    
     info.innerHTML = "Temple Inn & Suites | Samantha Atkins | WDD 230 | &copy; 2022";
 
     // CONTACT
@@ -58,6 +66,10 @@ function makeFooter() {
     pinterest.setAttribute("href", "https://www.pinterest.com/");
     pinterest.setAttribute("target", "blank");
 
+    // LAST UPDATED
+    let lastModified = new Date(document.lastModified);
+    modified.textContent = `Last Modified: ${lastModified.toLocaleDateString()}`;
+
     // APPENDING
     location.appendChild(locationLink);
 
@@ -68,6 +80,7 @@ function makeFooter() {
     socialIcons.appendChild(instagram);
     socialIcons.appendChild(pinterest);
 
+    info.appendChild(sources);
 
     phone_email.appendChild(phone);
     phone_email.appendChild(email);
@@ -76,6 +89,7 @@ function makeFooter() {
 
     footer.appendChild(logo);
     footer.appendChild(socialIcons);
+    footer.appendChild(modified);
     footer.appendChild(contact);
     footer.appendChild(info);
 }

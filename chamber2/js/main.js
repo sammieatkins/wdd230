@@ -9,9 +9,6 @@ datefieldUK.innerHTML = `${fulldateUK}`;
 
 // footer last updated
 let current_date = document.lastModified;
-
-// console.log(current_date);
-
 document.querySelector('.updated').textContent = current_date;
 
 

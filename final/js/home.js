@@ -62,7 +62,7 @@ function automaticSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(automaticSlides, 4000);
+  setTimeout(automaticSlides, 6000);
 }
 
 // SLIDESHOW
@@ -80,8 +80,6 @@ function currentSlide(n) {
 }
 
 function clickSlides(n) {
-  // clearTimeout(automaticSlides);
-
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");

@@ -65,7 +65,8 @@ function displayCards(item) {
     document.querySelector(".cards").appendChild(card);
 }
 
-let name = document.createElement("td");
+// h4 and p inside the table row
+let temple_name = document.createElement("td");
 let address = document.createElement("td");
 let phone = document.createElement("td");
 let list = document.createElement("ul");
@@ -80,17 +81,14 @@ function displayTable(temple) {
         temple.services.forEach(getServices) 
 
 
-        name.textContent = temple.name;
+        temple_name.textContent = temple.name;
         address.textContent = temple.address;
         phone.textContent = temple.phone;
         
         history.textContent = temple.history;
         closures.textContent = temple.closures;
 
-
-        
-        // row.appendChild(name.style.fontWeight = 'bold');
-        row.appendChild(name);
+        row.appendChild(temple_name);
         row.appendChild(address);
         row.appendChild(phone);  
         row.appendChild(list);

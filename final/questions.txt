@@ -3,8 +3,10 @@
 * = High Priority (more * = more important)
 
 ------- TECHNICAL -------
+HOME
+- How to make transition less abrupt?
+
 TEMPLES
-- Info: how to find session and ordinance schedule? Can that just be a link?
 - * How to make json file have multiple lines (services section) !!!!
 - * How to bold the name in table view (https://stackoverflow.com/questions/32531609/how-to-add-bold-text-using-javascript)
 
@@ -21,9 +23,6 @@ ALL PAGES
 - Include the last modified date of the page in the footer using JavaScript.
 HOME
 - Edit images for smaller screen sizes
-    SLIDESHOW
-    - **** Add button to make a reservation (pink accent color) - top right or bottom left?
-    - Pictures too big?
 
 TEMPLES
 - Like button
@@ -31,6 +30,4 @@ TEMPLES
 
 THANK YOU
 - Add something to separate logos (?)
-
-RESOURCE/ATTRIBUTION PAGE
-- make lol (references outside content, if necessary, as a link in the footer)
+- **Modal????

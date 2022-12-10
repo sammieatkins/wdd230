@@ -41,12 +41,8 @@ nav a {
 }
 main {
     text-align: center;
-    /* width: 100%; */
     margin: 0 auto;
 }
-/* main img {
-    width: 50%;
-} */
 main p {
     padding: 0px 30px;
 }
@@ -82,17 +78,32 @@ button {
     color: #FAF5EF;
     font-family: "Quicksand", sans-serif;
     font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
     border-radius: 10px;
     text-decoration: none;
     border: none;
     padding: 10px 20px;
     letter-spacing: .1em;
 }
+a {
+    text-decoration: none;
+}
 
 /* HOME PAGE */
 /* Slideshow */
 * {box-sizing:border-box}
 /* Slideshow container */
+#reserve_button {
+    position: absolute;
+    top: 20px;
+    right: 300px;
+    /* font-family: 'Oxygen', sans-serif; */
+    /* text-transform: uppercase; */
+}
+#reserve_button a {
+    color: #FAF5EF;
+}
 .slideshow-container {
     max-width: 1400px;
     position: relative;
@@ -169,12 +180,13 @@ button {
 /* Fading animation */
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 3s;
 }
 @keyframes fade {
-    from {opacity: .4}
+    from {opacity: .2}
     to {opacity: 1}
 }
+
 /* Other home page stuff */
 #caption {
     text-transform: capitalize;
@@ -373,6 +385,95 @@ select {
 input[type=date] {
     width: 325px;
     text-align: center;
+}
+
+/* modal */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* SOURCES */
+#sources main a {
+    display: block;
+    text-decoration: none;
+    color: #99C1B9;
+    font-family: "quicksand", sans-serif;
+    font-size: 1.4em;
+    /* text-align: left; */
+    margin: 0 auto;
+}
+#sources main a:visited {
+    color: #E0A4AF;
+}
+#sources main {
+    margin: 20px auto;
+}
+
+/* SERVICES */
+#services main {
+    width: 50%;
+    margin-bottom: 10px;
+}
+#services h2 {
+    margin-bottom: 0;
+}
+#services ul {
+    margin-top: 0;
+    margin: 0 auto;
+}
+#services main ul li {
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 2em;
+    font-size: 1.3em;
+}
+#free ul {
+    width: 60%;
+    margin: 0 auto;
+}
+#services main a {
+    display: block;
+    text-decoration: none;
+    color: #99C1B9;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+}
+#services main a:visited {
+    color: #E0A4AF;
 }
 
 /* MEDIA QUERY */
