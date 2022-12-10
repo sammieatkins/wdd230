@@ -19,15 +19,18 @@ SERVICES
 
 // TO DO //
 (make all the pages lol)
-ALL PAGES 
-- Include the last modified date of the page in the footer using JavaScript.
+ALL PAGES
+- Media queries
+
 HOME
-- Edit images for smaller screen sizes
+- Reserve button media queries
 
 TEMPLES
 - Like button
 - You may elect to have additional information shown upon clicking a card.
+- Fix table
+- Media queries
 
 THANK YOU
 - Add something to separate logos (?)
-- **Modal????
+- **Modal????(only after form is validated)
