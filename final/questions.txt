@@ -5,6 +5,7 @@
 ------- TECHNICAL -------
 HOME
 - How to make transition less abrupt?
+- Dot needs to move when picture automatically move
 
 TEMPLES
 - * How to make json file have multiple lines (services section) !!!!

@@ -13,6 +13,9 @@
     }
 
     /* HOME */
+    .slideshow-container img {
+        width: 80%;
+    }
 
     /* TEMPLE */
 
@@ -35,5 +38,11 @@
     /* THANK YOU */
     #thankyou main {
         width: 0%;
+    }
+
+    /* SERVICES */
+    #free ul {
+        width: 60%;
+        margin: 0 auto;
     }
 }

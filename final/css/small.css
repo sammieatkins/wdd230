@@ -111,7 +111,7 @@ a {
     margin-top: 20px;
 }
 .slideshow-container img {
-    width: 60%;
+    width: 70%;
     border-radius: 5px;
 }
 /* Hide the images by default */
@@ -209,7 +209,7 @@ a {
     width: 90%;
 }
 .social_icon {
-    margin: 20px;
+    margin: 18px;
     font-size: 1.3em;
     color: black;
 }
@@ -445,7 +445,6 @@ input[type=date] {
 
 /* SERVICES */
 #services main {
-    width: 50%;
     margin-bottom: 10px;
 }
 #services h2 {
@@ -454,6 +453,7 @@ input[type=date] {
 #services ul {
     margin-top: 0;
     margin: 0 auto;
+    padding-right: 20px;
 }
 #services main ul li {
     text-align: left;
@@ -461,19 +461,19 @@ input[type=date] {
     line-height: 2em;
     font-size: 1.3em;
 }
-#free ul {
-    width: 60%;
-    margin: 0 auto;
-}
 #services main a {
     display: block;
     text-decoration: none;
     color: #99C1B9;
     font-family: 'Quicksand', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin: 20px;
 }
 #services main a:visited {
     color: #E0A4AF;
+}
+#specialized, #free {
+    padding: 0 20px;
 }
 
 /* MEDIA QUERY */

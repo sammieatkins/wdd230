@@ -183,4 +183,10 @@
     #join h2 {
         font-size: 1.8em;
     }
+
+    /* CONTACT */
+    #contact_page form {
+        margin: 0 auto;
+        width: 30%;
+    }
 }
