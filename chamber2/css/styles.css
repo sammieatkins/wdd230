@@ -429,6 +429,7 @@ td, th {
 table, td, th {
     border-collapse: collapse;
     padding: 15px;
+    font-family: "quicksand", sans-serif;
 }
 tr:nth-child(odd) {
     background-color: #E7D4C3;

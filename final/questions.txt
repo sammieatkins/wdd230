@@ -21,6 +21,7 @@ SERVICES
 (make all the pages lol)
 ALL PAGES
 - Media queries
+- Add link hovers
 
 HOME
 - Reserve button media queries
