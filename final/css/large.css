@@ -102,6 +102,9 @@
     } */
 
     /* TEMPLES */
+    .cards {
+        display: flex;
+    }
     .cards section {
         width: 600px;
     }

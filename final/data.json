@@ -5,6 +5,10 @@
         "address": "12555 N Outer Forty Dr, St. Louis, MO 63141 United States",
         "phone": "314-514-1122",
         "services": ["Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"],
+        "clothing": "Clothing rental available",
+        "cafeteria": "No cafeteria available",
+        "housing": "No patron housing available",
+        "distribution": "Distribution center nearby",
         "img": "st_louis_temple_lds.jpg",
         "history": "29 December 1990 - Announced, 30 October 1993 - Groundbreaking, 1 June 1997 - Dedicated",
         "closures": "2022 Closures: Monday, 29 August 2022 - Monday, 5 December 2022; Saturday, 24 December 2022; Saturday, 31 December 2022"

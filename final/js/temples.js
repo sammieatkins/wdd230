@@ -66,21 +66,16 @@ function displayCards(item) {
 }
 
 // h4 and p inside the table row
-let temple_name = document.createElement("td");
-let address = document.createElement("td");
-let phone = document.createElement("td");
-let list = document.createElement("ul");
-let history = document.createElement("p");
-let closures = document.createElement("p");
 function displayTable(temple) {
-    largeQuery = window.matchMedia("(min-width: 64em)");
+    let largeQuery = window.matchMedia("(min-width: 64em)");
     let row = document.createElement("tr");
+    let temple_name = document.createElement("td");
+    let address = document.createElement("td");
+    let phone = document.createElement("td");
+    let list = document.createElement("ul");
+    let history = document.createElement("p");
+    let closures = document.createElement("p");
     if (largeQuery.matches) {
-        
-        console.log(temple.services)
-        temple.services.forEach(getServices) 
-
-
         temple_name.textContent = temple.name;
         address.textContent = temple.address;
         phone.textContent = temple.phone;
@@ -96,7 +91,9 @@ function displayTable(temple) {
         row.appendChild(closures);      
     }
     else {
+        console.log("made it to else")
         let temple_info = document.createElement("td");
+        temple_info.setAttribute("id", "temple_info");
         temple_info.textContent = `${temple.name}\r\n${temple.address}\r\n${temple.phone}\r\n${temple.services}\r\n${temple.history}\r\n${temple.closures}`;
         temple_info.setAttribute('style', 'white-space: pre;');
         row.appendChild(temple_info);
@@ -104,11 +101,11 @@ function displayTable(temple) {
     document.querySelector(".table").appendChild(row);
 }
 
-function getServices(item) {
-    let service = document.createElement("li");
-    service.textContent = item;
-    list.appendChild(service);
-}
+// function getServices(item) {
+//     let service = document.createElement("li");
+//     service.textContent = item;
+//     list.appendChild(service);
+// }
 
 // let services1 = document.createElement("li");
 // let services2 = document.createElement("li");

@@ -26,6 +26,9 @@
     }
 
     /* TEMPLE */
+    .cards {
+        display: block;
+    }
 
     /* RESERVATION */
     form {

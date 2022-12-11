@@ -255,7 +255,6 @@ a:hover {
 .cards section {
     padding: 30px;
     text-align: center;
-    width: 300px;
     margin: 20px;
     background-color: #F0DADF;
     border-radius: 5px;
@@ -282,9 +281,14 @@ td, th {
 table, td, th {
     border-collapse: collapse;
     padding: 15px;
+    line-height: 1.8em;
+    font-size: 1.2em;
 }
 tr:nth-child(odd) {
     background-color: #F5ECEF;
+}
+#temple_info {
+    width: 100vw;
 }
 
 /* RESERVATION */
