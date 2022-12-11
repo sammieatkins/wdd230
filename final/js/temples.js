@@ -38,32 +38,98 @@ function displayCards(item) {
     let card = document.createElement("section");
 
     let name = document.createElement("h2");
+    let contact = document.createElement("h3");
+    let services_title = document.createElement("h3");
+    let history_title = document.createElement("h3");
     let address = document.createElement("p");
     let phone = document.createElement("p");
-    let services = document.createElement("p");
-    let history = document.createElement("p");
+
+    let services = document.createElement("ul");
+    let clothing = document.createElement("li");
+    let cafeteria = document.createElement("li");
+    let housing = document.createElement("li");
+    let distribution = document.createElement("li");
+
+    let history = document.createElement("ul");
+    let announced = document.createElement("li");
+    let groundbreaking = document.createElement("li");
+    let dedicated = document.createElement("li");
+
     let closures = document.createElement("p");
     let img = document.createElement("img");
 
+    contact.textContent = "Contact Info";
     name.textContent = item.name;
     address.textContent = item.address;
     phone.textContent = item.phone;
-    services.textContent = item.services;
-    history.textContent = item.history;
+
+    services_title.textContent = "Services";
+    clothing.textContent = item.clothing;
+    cafeteria.textContent = item.cafeteria;
+    housing.textContent = item.housing;
+    distribution.textContent = item.distribution;
+
+    history_title.textContent = "History";
+    announced.textContent = item.announced;
+    groundbreaking.textContent = item.groundbreaking;
+    dedicated.textContent = item.dedicated;
+
     closures.textContent = item.closures;
     img.setAttribute("src", `images/${item.img}`);
     img.setAttribute("alt", item.name);
 
+    services.appendChild(clothing);
+    services.appendChild(cafeteria);
+    services.appendChild(housing);
+    services.appendChild(distribution);
+
+    history.appendChild(announced);
+    history.appendChild(groundbreaking);
+    history.appendChild(dedicated);
+    
     card.appendChild(name);
     card.appendChild(img);
+    card.appendChild(contact);
     card.appendChild(address);
     card.appendChild(phone);
+    card.appendChild(services_title)
     card.appendChild(services);
+    card.appendChild(history_title);
     card.appendChild(history);
     card.appendChild(closures);
     
     document.querySelector(".cards").appendChild(card);
 }
+// function displayCards(item) {
+//     let card = document.createElement("section");
+
+//     let name = document.createElement("h2");
+//     let address = document.createElement("p");
+//     let phone = document.createElement("p");
+//     let services = document.createElement("p");
+//     let history = document.createElement("p");
+//     let closures = document.createElement("p");
+//     let img = document.createElement("img");
+
+//     name.textContent = item.name;
+//     address.textContent = item.address;
+//     phone.textContent = item.phone;
+//     services.textContent = item.services;
+//     history.textContent = item.history;
+//     closures.textContent = item.closures;
+//     img.setAttribute("src", `images/${item.img}`);
+//     img.setAttribute("alt", item.name);
+
+//     card.appendChild(name);
+//     card.appendChild(img);
+//     card.appendChild(address);
+//     card.appendChild(phone);
+//     card.appendChild(services);
+//     card.appendChild(history);
+//     card.appendChild(closures);
+    
+//     document.querySelector(".cards").appendChild(card);
+// }
 
 // h4 and p inside the table row
 function displayTable(temple) {
