@@ -121,4 +121,37 @@
     #services main {
         width: 50%;
     }
+
+    /* MISSIONARY */
+    #missionary main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 180px;
+    }
+    #missionary main h1 {
+        grid-column: 1/3;
+    }
+    #suite_types {
+        grid-column: 1/2;
+    }
+    #missionary_contact {
+        grid-column: 2/3;
+    }
+    #missionary_contact form {
+        margin: 0;
+        display: block;
+    }
+    .inline {
+        font-size: 1.2em;
+    }
+    #missionary main img {
+        width: 50%;
+    }
+    #missionary_contact form textarea {
+        height: 190px;
+    }
+    #suite_types p {
+        width: 600px;
+        margin: 0 auto;
+    }
 }

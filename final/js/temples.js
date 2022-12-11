@@ -86,8 +86,9 @@ function displayCards(item) {
     img.setAttribute("src", `images/${item.img}`);
     img.setAttribute("alt", item.name);
 
-    item.closuresList.forEach(item => {
-        handleJsonList(item, closures);
+    let closuresList = item.closuresList
+    item.closuresList.forEach(listItem => {
+        handleJsonList(listItem, closures);
     })
 
     services.appendChild(clothing);
@@ -115,7 +116,7 @@ function displayCards(item) {
     card.appendChild(historyDiv);
 
     card.appendChild(closuresTitle);
-    card.appendChild(closures);
+    card.appendChild(closuresList);
     
     document.querySelector(".cards").appendChild(card);
 }
@@ -124,6 +125,7 @@ function handleJsonList(item, ul) {
     let li = document.createElement("li");
     li.textContent = item;
     ul.appendChild(li);
+    return ul;
 }
 
 // h4 and p inside the table row

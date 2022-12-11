@@ -56,4 +56,9 @@
         width: 60%;
         margin: 0 auto;
     }
+
+    /* MISSIONARY */
+    #missionary_contact form textarea {
+        height: 107px;
+    }
 }

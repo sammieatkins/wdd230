@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/main.js"></script>
-    <script defer src="js/home.js"></script>
     <title>Missionary | Temple Inn & Suites</title>
 </head>
 <body>
@@ -28,7 +27,50 @@
         </header>
         <main>
             <!-- A full-time temple missionary page that provides information and images about the suites offered at the hotel with a simple Contact Us form for more details.  -->
-            
+            <h1>Suites for Full-Time Temple Missionaries</h1>
+            <div id="suite_types">
+                <h2>Types of Suites</h2>
+                <div id="large_suite">
+                    <h3>Large Suite</h3>
+                    <img src="images/missionary_suite_lg.jpeg" alt="Large Suite">
+                    <p>The Large Suite comes with a spacious living room and kitchen area, with the bed hidded behind the kitchen wall and a second tv for more privacy. Ideal for extended stay.</p>
+                </div>
+                <div id="large_suite">
+                    <h3>Regular Suite</h3>
+                    <img src="images/missionary_suite.jpeg" alt="Large Suite">
+                    <p>The Regular Suite also comes with a kitchen area, but does not have a separate living space and is more compact. </p>
+                </div>
+            </div>
+            <div id="missionary_contact">
+                <h2>Contact Us for More Info</h2>
+                <p id="required_field"><i class="fa-solid fa-asterisk asterisk"></i> Required field</p>
+                <form method="get" action="thankyou.html">
+                    <div id="personal_info">
+                        <label for="fname"><i class="fa-solid fa-asterisk asterisk"></i> First Name:</label>
+                        <input id="fname" type="text" name="firstname" required>
+                        
+                        <label for="lname"><i class="fa-solid fa-asterisk asterisk"></i> Last Name:</label>
+                        <input id="lname" type="text" name="lastname" required>
+                        
+                        <label for="email"><i class="fa-solid fa-asterisk asterisk"></i> Email:</label>
+                        <input id="email" type="email" name="email">
+                    </div>
+                    <div id="reservation_info">
+                        <p><i class="fa-solid fa-asterisk asterisk"></i> Suite Type Info Requested:</p>
+                        <div id="checked_inputs"> 
+                            <label class="inline" for="large"><input class="checked" type="checkbox" id="large" name="large" value="Large Suite"><span> Large Suite</span></label>
+                            <label class="inline" for="regular"><input type="checkbox" id="regular" name="regular" value="Regular Suite"><span> Regular Suite</span></label>                        
+                        </div>
+                        <div id="questions">
+                            <label for="message">Other Questions:</label>
+                            <textarea id="message" placeholder="Enter any questions or comments here."></textarea>
+                        </div>        
+                    </div>         
+
+                    <input id="date" type="hidden" name="todaydate">
+                    <input id="submit" type="submit" value="Submit">                
+                </form>
+            </div>
         </main>
         <footer id="footer"></footer>
     </div>

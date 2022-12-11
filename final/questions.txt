@@ -8,20 +8,19 @@ HOME
 - Dot needs to move when picture automatically move
 
 TEMPLES
+- **************** Getting closures to loop through a list
 - How to bold the name in table view (https://stackoverflow.com/questions/32531609/how-to-add-bold-text-using-javascript)
 
 SERVICES
   MISSIONARY
-  - ** Title? What is supposed to be on that page? Instructions unclear
-
-------- COSMETIC -------
-
+  - AHHHHHHHHHHHHHHHHHHHHHHH CENTERING THE PAGE >:(
 
 // TO DO //
 (make all the pages lol)
 ALL PAGES
 - Media queries
 - Add link hovers
+- Add margin-top to footer logo?
 
 TEMPLES
 - Like button

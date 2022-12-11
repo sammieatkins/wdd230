@@ -502,6 +502,45 @@ input[type=date] {
     padding: 0 20px;
 }
 
+/* MISSIONARY */
+#missionary main img {
+    width: 80%;
+}
+#missionary input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    display: inline;
+}
+#missionary form p {
+    font-weight: normal;
+    font-size: 1.5em;
+}
+#missionary #reservation_info label {
+    display: block;
+    padding-right: 10px;
+    padding-left: 22px;
+    text-indent: -22px;
+}
+#missionary #reservation_info input {
+    vertical-align: middle;
+    margin: 0;
+}
+#missionary #reservation_info label span {
+    vertical-align: middle;
+}
+#missionary_contact form textarea {
+    height: 125px;
+}
+#missionary_contact h2 {
+    margin-bottom: 0;
+}
+#questions label {
+    margin-top: 20px;
+}
+#missionary form #submit {
+    margin-top: 20px;
+}
+
 /* MEDIA QUERY */
 @media (min-width: 960px) {
     nav {
