@@ -265,6 +265,27 @@ a:hover {
 h2, h1 {
     text-align: center;
 }
+.cards section h3 {
+    margin: 22px 0 0 0;
+    font-size: 1.3em;
+}
+.cards section p {
+    margin: 0;
+}
+.cards section ul {
+    margin: 0;
+}
+.cards section ul li {
+    line-height: 1.8em;
+    font-size: 1.2em;
+}
+.list_container {
+    text-align: center;
+}
+.temples_list {
+    display: inline-block;
+    text-align: left;
+}
 
 /* TEMPLES TABLE */
 table {

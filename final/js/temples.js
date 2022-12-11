@@ -39,23 +39,26 @@ function displayCards(item) {
 
     let name = document.createElement("h2");
     let contact = document.createElement("h3");
-    let services_title = document.createElement("h3");
-    let history_title = document.createElement("h3");
     let address = document.createElement("p");
     let phone = document.createElement("p");
-
+    
+    let servicesTitle = document.createElement("h3");
+    let servicesDiv = document.createElement("div");
     let services = document.createElement("ul");
     let clothing = document.createElement("li");
     let cafeteria = document.createElement("li");
     let housing = document.createElement("li");
     let distribution = document.createElement("li");
-
+    
+    let historyTitle = document.createElement("h3");
+    let historyDiv = document.createElement("div");
     let history = document.createElement("ul");
     let announced = document.createElement("li");
     let groundbreaking = document.createElement("li");
     let dedicated = document.createElement("li");
 
-    let closures = document.createElement("p");
+    let closuresTitle = document.createElement("h3");
+    let closures = document.createElement("ul");
     let img = document.createElement("img");
 
     contact.textContent = "Contact Info";
@@ -63,93 +66,92 @@ function displayCards(item) {
     address.textContent = item.address;
     phone.textContent = item.phone;
 
-    services_title.textContent = "Services";
+    servicesTitle.textContent = "Services";
+    servicesDiv.setAttribute("class","list_container");
+    services.setAttribute("class","temples_list");
     clothing.textContent = item.clothing;
     cafeteria.textContent = item.cafeteria;
     housing.textContent = item.housing;
     distribution.textContent = item.distribution;
 
-    history_title.textContent = "History";
+    historyTitle.textContent = "History";
+    historyDiv.setAttribute("class","list_container");
+    history.setAttribute("class","temples_list");
     announced.textContent = item.announced;
     groundbreaking.textContent = item.groundbreaking;
     dedicated.textContent = item.dedicated;
 
+    closuresTitle.textContent = "Closures";
     closures.textContent = item.closures;
     img.setAttribute("src", `images/${item.img}`);
     img.setAttribute("alt", item.name);
+
+    item.closuresList.forEach(item => {
+        handleJsonList(item, closures);
+    })
 
     services.appendChild(clothing);
     services.appendChild(cafeteria);
     services.appendChild(housing);
     services.appendChild(distribution);
+    servicesDiv.appendChild(services);
 
     history.appendChild(announced);
     history.appendChild(groundbreaking);
     history.appendChild(dedicated);
+    historyDiv.appendChild(history);
     
     card.appendChild(name);
     card.appendChild(img);
+
     card.appendChild(contact);
     card.appendChild(address);
     card.appendChild(phone);
-    card.appendChild(services_title)
-    card.appendChild(services);
-    card.appendChild(history_title);
-    card.appendChild(history);
+
+    card.appendChild(servicesTitle)
+    card.appendChild(servicesDiv);
+
+    card.appendChild(historyTitle);
+    card.appendChild(historyDiv);
+
+    card.appendChild(closuresTitle);
     card.appendChild(closures);
     
     document.querySelector(".cards").appendChild(card);
 }
-// function displayCards(item) {
-//     let card = document.createElement("section");
 
-//     let name = document.createElement("h2");
-//     let address = document.createElement("p");
-//     let phone = document.createElement("p");
-//     let services = document.createElement("p");
-//     let history = document.createElement("p");
-//     let closures = document.createElement("p");
-//     let img = document.createElement("img");
-
-//     name.textContent = item.name;
-//     address.textContent = item.address;
-//     phone.textContent = item.phone;
-//     services.textContent = item.services;
-//     history.textContent = item.history;
-//     closures.textContent = item.closures;
-//     img.setAttribute("src", `images/${item.img}`);
-//     img.setAttribute("alt", item.name);
-
-//     card.appendChild(name);
-//     card.appendChild(img);
-//     card.appendChild(address);
-//     card.appendChild(phone);
-//     card.appendChild(services);
-//     card.appendChild(history);
-//     card.appendChild(closures);
-    
-//     document.querySelector(".cards").appendChild(card);
-// }
+function handleJsonList(item, ul) {
+    let li = document.createElement("li");
+    li.textContent = item;
+    ul.appendChild(li);
+}
 
 // h4 and p inside the table row
 function displayTable(temple) {
     let largeQuery = window.matchMedia("(min-width: 64em)");
+
+    // let hName = document.createElement("th");
+    // let hContact = document.createElement("th");
+    // let hServices = document.createElement("th");
+    // let hHistory = document.createElement("th");
+    // let hClosures = document.createElement("th");
+
     let row = document.createElement("tr");
-    let temple_name = document.createElement("td");
+    let templeName = document.createElement("td");
     let address = document.createElement("td");
     let phone = document.createElement("td");
     let list = document.createElement("ul");
     let history = document.createElement("p");
     let closures = document.createElement("p");
     if (largeQuery.matches) {
-        temple_name.textContent = temple.name;
+        templeName.textContent = temple.name;
         address.textContent = temple.address;
         phone.textContent = temple.phone;
         
         history.textContent = temple.history;
         closures.textContent = temple.closures;
 
-        row.appendChild(temple_name);
+        row.appendChild(templeName);
         row.appendChild(address);
         row.appendChild(phone);  
         row.appendChild(list);
@@ -158,11 +160,11 @@ function displayTable(temple) {
     }
     else {
         console.log("made it to else")
-        let temple_info = document.createElement("td");
-        temple_info.setAttribute("id", "temple_info");
-        temple_info.textContent = `${temple.name}\r\n${temple.address}\r\n${temple.phone}\r\n${temple.services}\r\n${temple.history}\r\n${temple.closures}`;
-        temple_info.setAttribute('style', 'white-space: pre;');
-        row.appendChild(temple_info);
+        let templeInfo = document.createElement("td");
+        templeInfo.setAttribute("id", "temple_info");
+        templeInfo.textContent = `${temple.name}\r\n${temple.address}\r\n${temple.phone}\r\n${temple.services}\r\n${temple.history}\r\n${temple.closures}`;
+        templeInfo.setAttribute('style', 'white-space: pre;');
+        row.appendChild(templeInfo);
     }
     document.querySelector(".table").appendChild(row);
 }

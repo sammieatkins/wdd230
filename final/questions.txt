@@ -8,8 +8,7 @@ HOME
 - Dot needs to move when picture automatically move
 
 TEMPLES
-- * How to make json file have multiple lines (services section) !!!!
-- * How to bold the name in table view (https://stackoverflow.com/questions/32531609/how-to-add-bold-text-using-javascript)
+- How to bold the name in table view (https://stackoverflow.com/questions/32531609/how-to-add-bold-text-using-javascript)
 
 SERVICES
   MISSIONARY
@@ -27,7 +26,7 @@ ALL PAGES
 TEMPLES
 - Like button
 - You may elect to have additional information shown upon clicking a card. (Maybe just on smaller views to make it less cluttered?)
-- Fix table
+- Fix table => scrap table????
 - Media queries
 
 THANK YOU

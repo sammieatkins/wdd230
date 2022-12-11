@@ -14,7 +14,8 @@
         "announced": "Announced: 29 December 1990",
         "groundbreaking": "Groundbreaking: 30 October 1993",
         "dedicated": "Dedicated: 1 June 1997",
-        "closures": "2022 Closures: Monday, 29 August 2022 - Monday, 5 December 2022; Saturday, 24 December 2022; Saturday, 31 December 2022"
+        "closures": "2022 Closures: Monday, 29 August 2022 - Monday, 5 December 2022; Saturday, 24 December 2022; Saturday, 31 December 2022",
+        "closuresList": ["Monday, 29 August 2022 - Monday, 5 December 2022","Saturday, 24 December 2022","Saturday, 31 December 2022"]
       },
       {
         "name": "Palmyra New York Temple",
