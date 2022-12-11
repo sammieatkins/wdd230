@@ -14,7 +14,15 @@
 
     /* HOME */
     .slideshow-container img {
-        width: 80%;
+        width: 100%;
+    }
+    #reserve_button {
+        bottom: 90px;
+        left: 25px;
+        font-size: 1.5em;
+    }
+    .text {
+        font-size: 25px;
     }
 
     /* TEMPLE */

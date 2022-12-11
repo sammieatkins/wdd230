@@ -42,6 +42,19 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    #reserve_button {
+        top: 20px;
+        right: 300px;
+        bottom: 500px;
+        left: 840px;
+        font-size: 1.1em;
+    }
+    .prev {
+        text-shadow: none;
+    }
+    .next {
+        text-shadow: none;
+    }
     .slideshow-container img {
         width: 60%;
     }

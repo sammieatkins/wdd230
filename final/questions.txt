@@ -24,12 +24,9 @@ ALL PAGES
 - Media queries
 - Add link hovers
 
-HOME
-- Reserve button media queries
-
 TEMPLES
 - Like button
-- You may elect to have additional information shown upon clicking a card.
+- You may elect to have additional information shown upon clicking a card. (Maybe just on smaller views to make it less cluttered?)
 - Fix table
 - Media queries
 

@@ -89,6 +89,9 @@ button {
 a {
     text-decoration: none;
 }
+a:hover {
+    color: #E0A4AF;
+}
 
 /* HOME PAGE */
 /* Slideshow */
@@ -96,10 +99,8 @@ a {
 /* Slideshow container */
 #reserve_button {
     position: absolute;
-    top: 20px;
-    right: 300px;
-    /* font-family: 'Oxygen', sans-serif; */
-    /* text-transform: uppercase; */
+    bottom: 75px;
+    left: 65px;
 }
 #reserve_button a {
     color: #FAF5EF;
@@ -111,7 +112,7 @@ a {
     margin-top: 20px;
 }
 .slideshow-container img {
-    width: 70%;
+    width: 100%;
     border-radius: 5px;
 }
 /* Hide the images by default */
@@ -148,7 +149,7 @@ a {
 /* Caption text */
 .text {
     color: black;
-    font-size: 15px;
+    font-size: 20px;
     padding: 8px 12px;
     width: 100%;
     text-align: center;
