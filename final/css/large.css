@@ -126,7 +126,7 @@
     #missionary main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 0 180px;
+        width: 75%;
     }
     #missionary main h1 {
         grid-column: 1/3;
@@ -145,7 +145,7 @@
         font-size: 1.2em;
     }
     #missionary_contact form textarea {
-        height: 90px;
+        height: 320px;
     }
     #suite_types p {
         width: 455px;

@@ -10,7 +10,7 @@ HOME
 
 TEMPLES
 - Like button
-- Add foreach functions to displayCards() function
+- stl temple history wrap and closure dates (12/5 needed?)
 
 SERVICES
 - Checkboxes customized

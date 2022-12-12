@@ -507,6 +507,9 @@ input[type=date] {
 }
 
 /* MISSIONARY */
+#missionary main {
+    padding: 0 10px;
+}
 #missionary main img {
     width: 80%;
 }
