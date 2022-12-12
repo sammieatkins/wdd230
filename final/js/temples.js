@@ -35,7 +35,7 @@ async function getTemples(requestURL) {
 getTemples(requestURL);
 
 // separate this into other functions?
-function displayCards(item) {
+function displayCards1(item) {
     let card = document.createElement("section");
 
     let name = document.createElement("h2");
@@ -117,6 +117,70 @@ function displayCards(item) {
     item.closuresList.forEach(listItem => {
         handleJsonList(listItem, closures);
     })
+    document.querySelector(".cards").appendChild(card);
+}
+
+function displayCards(item) {
+    let card = document.createElement("section");
+    
+    let img = document.createElement("img");
+
+    let name = document.createElement("h2");
+    let contact = document.createElement("h3");
+    let address = document.createElement("p");
+    let phone = document.createElement("p");
+    
+    let servicesTitle = document.createElement("h3");
+    let services = document.createElement("ul");
+    
+    let historyTitle = document.createElement("h3");
+    let history = document.createElement("ul");
+
+    let closuresTitle = document.createElement("h3");
+    let closures = document.createElement("ul");
+
+    contact.textContent = "Contact Info";
+    name.textContent = item.name;
+    address.textContent = item.address;
+    phone.textContent = item.phone;
+
+    servicesTitle.textContent = "Services";
+    services.setAttribute("class","temples_list");
+    item.closuresList.forEach(listItem => {
+        handleJsonList(listItem, services);
+    })
+
+    historyTitle.textContent = "History";
+    history.setAttribute("class","temples_list");
+    item.closuresList.forEach(listItem => {
+        handleJsonList(listItem, history);
+    })
+
+    closuresTitle.textContent = "Closures";
+    closures.setAttribute("class","temples_list");
+    item.closuresList.forEach(listItem => {
+        handleJsonList(listItem, closures);
+    })
+
+    img.setAttribute("src", `images/${item.img}`);
+    img.setAttribute("alt", item.name);
+    
+    card.appendChild(name);
+    card.appendChild(img);
+    
+    card.appendChild(contact);
+    card.appendChild(address);
+    card.appendChild(phone);
+    
+    card.appendChild(servicesTitle)
+    card.appendChild(services);
+
+    card.appendChild(historyTitle);
+    card.appendChild(history);
+
+    card.appendChild(closuresTitle);
+    card.appendChild(closures);
+    
     document.querySelector(".cards").appendChild(card);
 }
 

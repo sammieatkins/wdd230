@@ -6,8 +6,7 @@
 ALL PAGES
 
 HOME
-- How to make transition less abrupt?
-- Dot needs to move when picture automatically move
+- How to make transition less abrupt? Where does it flash white????
 
 TEMPLES
 - No table
@@ -27,5 +26,5 @@ ALL PAGES
 - Add margin-top to footer logo?
 
 THANK YOU
-- Add something to separate logos (?)
+- Add something to separate logos (?)3
 - **Modal????(only after form is validated)
