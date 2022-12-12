@@ -7,8 +7,7 @@
         "services": ["Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"],
         "img": "st_louis_temple_lds.jpg",
         "history": ["Announced: 29 December 1990", "Groundbreaking: 30 October 1993", "Dedicated: 1 June 1997"],
-        "closures": "2022 Closures: Monday, 29 August 2022 - Monday, 5 December 2022; Saturday, 24 December 2022; Saturday, 31 December 2022",
-        "closuresList": ["Monday, 29 August 2022 - Monday, 5 December 2022","Saturday, 24 December 2022","Saturday, 31 December 2022"]
+        "closures": ["Monday, 29 August 2022 - Monday, 5 December 2022","Saturday, 24 December 2022","Saturday, 31 December 2022"]
       },
       {
         "name": "Palmyra New York Temple",
@@ -17,8 +16,7 @@
         "services": ["Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"],
         "img": "palmyra_temple_lds.jpg",
         "history": ["Announced: 21 February 1999", "Groundbreaking: 25 May 1999", "Dedicated: 6 April 2000"],
-        "closures": "2022 Closures: Saturday, 24 December 2022; Saturday, 31 December 2022",
-        "closuresList": ["Saturday, 24 December 2022","Saturday, 31 December 2022"]
+        "closures": ["Saturday, 24 December 2022","Saturday, 31 December 2022"]
       },
       {
         "name": "Nauvoo Illinois Temple",
@@ -28,7 +26,7 @@
         "img": "nauvoo_temple_lds.jpg",
         "history": ["Announced: 4 April 1999", "Groundbreaking: 24 October 1999", "Dedicated: 27 June 2002"],
         "closures": "2022 Closures: Saturday, 24 December 2022; Saturday, 31 December 2022",
-        "closuresList": ["Saturday, 24 December 2022","Saturday, 31 December 2022"]
+        "closures": ["Saturday, 24 December 2022","Saturday, 31 December 2022"]
       },
       {
         "name": "Rexburg Idaho Temple",
@@ -37,8 +35,7 @@
         "services": ["Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"],
         "img": "rexburg_idaho_temple.jpg",
         "history": ["Announced: 12 December 2003", "Groundbreaking: 30 July 2005", "Dedicated: 10 February 2008"],
-        "closures": "2022 Closures: Saturday, 24 December 2022; Saturday, 31 December 2022",
-        "closuresList": ["Saturday, 24 December 2022","Saturday, 31 December 2022"]
+        "closures": ["Saturday, 24 December 2022","Saturday, 31 December 2022"]
       }
     ]
   }

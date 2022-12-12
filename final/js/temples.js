@@ -11,176 +11,72 @@ async function getTemples(requestURL) {
         
         temples.forEach(temple => {
             displayCards(temple)
-        });
-        
-        document.getElementById("list").addEventListener("click", () => {
-            document.querySelector(".cards").innerHTML = "";
-            document.querySelector("#card").removeAttribute("disabled");
-            document.querySelector("#list").setAttribute("disabled", true);
-            temples.forEach(temple => {                
-                displayTable(temple)
-            });
-        });
-        document.getElementById("card").addEventListener("click", () => {
-            document.querySelector(".table").innerHTML = "";
-            document.querySelector("#list").removeAttribute("disabled");     
-            document.querySelector("#card").setAttribute("disabled", true);
-            temples.forEach(temple => {
-                displayCards(temple)
-            });
-        });        
+        }); 
     };
 };
 
 getTemples(requestURL);
 
-// separate this into other functions?
-function displayCards1(item) {
+function displayCards(item) {
+    // create card
     let card = document.createElement("section");
-
-    let name = document.createElement("h2");
-    let contact = document.createElement("h3");
-    let address = document.createElement("p");
-    let phone = document.createElement("p");
     
-    let servicesTitle = document.createElement("h3");
-    let servicesDiv = document.createElement("div");
-    let services = document.createElement("ul");
-    let clothing = document.createElement("li");
-    let cafeteria = document.createElement("li");
-    let housing = document.createElement("li");
-    let distribution = document.createElement("li");
-    
-    let historyTitle = document.createElement("h3");
-    let historyDiv = document.createElement("div");
-    let history = document.createElement("ul");
-    let announced = document.createElement("li");
-    let groundbreaking = document.createElement("li");
-    let dedicated = document.createElement("li");
-
-    let closuresTitle = document.createElement("h3");
-    let closures = document.createElement("ul");
+    // img
     let img = document.createElement("img");
-
-    contact.textContent = "Contact Info";
-    name.textContent = item.name;
-    address.textContent = item.address;
-    phone.textContent = item.phone;
-
-    servicesTitle.textContent = "Services";
-    servicesDiv.setAttribute("class","list_container");
-    services.setAttribute("class","temples_list");
-    clothing.textContent = item.clothing;
-    cafeteria.textContent = item.cafeteria;
-    housing.textContent = item.housing;
-    distribution.textContent = item.distribution;
-
-    historyTitle.textContent = "History";
-    historyDiv.setAttribute("class","list_container");
-    history.setAttribute("class","temples_list");
-    announced.textContent = item.announced;
-    groundbreaking.textContent = item.groundbreaking;
-    dedicated.textContent = item.dedicated;
-
-    closuresTitle.textContent = "Closures";
-    closures.setAttribute("class","temples_list");
     img.setAttribute("src", `images/${item.img}`);
     img.setAttribute("alt", item.name);
-    
-    services.appendChild(clothing);
-    services.appendChild(cafeteria);
-    services.appendChild(housing);
-    services.appendChild(distribution);
-    servicesDiv.appendChild(services);
-    
-    history.appendChild(announced);
-    history.appendChild(groundbreaking);
-    history.appendChild(dedicated);
-    historyDiv.appendChild(history);
-    
-    card.appendChild(name);
-    card.appendChild(img);
-    
-    card.appendChild(contact);
-    card.appendChild(address);
-    card.appendChild(phone);
-    
-    card.appendChild(servicesTitle)
-    card.appendChild(servicesDiv);
 
-    card.appendChild(historyTitle);
-    card.appendChild(historyDiv);
-    
-    card.appendChild(closuresTitle);
-    card.appendChild(closures);
-    
-    item.closuresList.forEach(listItem => {
-        handleJsonList(listItem, closures);
-    })
-    document.querySelector(".cards").appendChild(card);
-}
-
-function displayCards(item) {
-    let card = document.createElement("section");
-    
-    let img = document.createElement("img");
-
+    // contact info
     let name = document.createElement("h2");
-    let contact = document.createElement("h3");
+    let contactTitle = document.createElement("h3");
     let address = document.createElement("p");
     let phone = document.createElement("p");
-    
-    let servicesTitle = document.createElement("h3");
-    let services = document.createElement("ul");
-    
-    let historyTitle = document.createElement("h3");
-    let history = document.createElement("ul");
-
-    let closuresTitle = document.createElement("h3");
-    let closures = document.createElement("ul");
-
-    contact.textContent = "Contact Info";
+    contactTitle.textContent = "Contact Info";
     name.textContent = item.name;
     address.textContent = item.address;
     phone.textContent = item.phone;
-
+    
+    // services
+    let servicesTitle = document.createElement("h3");
+    let services = document.createElement("ul");
     servicesTitle.textContent = "Services";
     services.setAttribute("class","temples_list");
     item.closuresList.forEach(listItem => {
         handleJsonList(listItem, services);
     })
-
+    
+    // history
+    let historyTitle = document.createElement("h3");
+    let history = document.createElement("ul");
     historyTitle.textContent = "History";
     history.setAttribute("class","temples_list");
     item.closuresList.forEach(listItem => {
         handleJsonList(listItem, history);
     })
 
+    // closures
+    let closuresTitle = document.createElement("h3");
+    let closures = document.createElement("ul");
     closuresTitle.textContent = "Closures";
     closures.setAttribute("class","temples_list");
     item.closuresList.forEach(listItem => {
         handleJsonList(listItem, closures);
     })
 
-    img.setAttribute("src", `images/${item.img}`);
-    img.setAttribute("alt", item.name);
-    
+    // append to card
     card.appendChild(name);
-    card.appendChild(img);
-    
-    card.appendChild(contact);
+    card.appendChild(img);    
+    card.appendChild(contactTitle);
     card.appendChild(address);
-    card.appendChild(phone);
-    
+    card.appendChild(phone);    
     card.appendChild(servicesTitle)
     card.appendChild(services);
-
     card.appendChild(historyTitle);
     card.appendChild(history);
-
     card.appendChild(closuresTitle);
     card.appendChild(closures);
     
+    // append card to existing div
     document.querySelector(".cards").appendChild(card);
 }
 
