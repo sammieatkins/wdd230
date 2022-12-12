@@ -1,7 +1,5 @@
 // QUESTIONS //
 
-* = High Priority (more * = more important)
-
 TO TURN IN:
 * Reception Services page (Idea: have a link to a catering company and flower/decor company that the hotel partners with. setup: hotel employees help? maybe an employee is a wedding planner?)
 * Temple Like Button
