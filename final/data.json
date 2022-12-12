@@ -25,7 +25,6 @@
         "services": ["Clothing rental available","No cafeteria available","No patron housing available","No distribution center nearby"],
         "img": "nauvoo_temple_lds.jpg",
         "history": ["Announced: 4 April 1999", "Groundbreaking: 24 October 1999", "Dedicated: 27 June 2002"],
-        "closures": "2022 Closures: Saturday, 24 December 2022; Saturday, 31 December 2022",
         "closures": ["Saturday, 24 December 2022","Saturday, 31 December 2022"]
       },
       {
