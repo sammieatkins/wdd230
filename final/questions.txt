@@ -2,29 +2,13 @@
 
 * = High Priority (more * = more important)
 
-------- TECHNICAL -------
-ALL PAGES
+TO TURN IN:
+* Reception Services page (Idea: have a link to a catering company and flower/decor company that the hotel partners with. setup: hotel employees help? maybe an employee is a wedding planner?)
+* Temple Like Button
+* Double check media queries on all pages
 
-HOME
-- How to make transition less abrupt? Where does it flash white????
-
-TEMPLES
-- Like button
-- stl temple history wrap and closure dates (12/5 needed?)
-
-SERVICES
-  MISSIONARY
-  - Checkboxes customized
-  RECEPTION PAGE
-  - Idea: have a link to a catering company and flower/decor company that the hotel partners with. setup: hotel employees help? maybe an employee is a wedding planner?
-
-// TO DO //
-(make all the pages lol)
-ALL PAGES
-- Media queries
-- Add link hovers
-- Add margin-top to footer logo?
-
-THANK YOU
-- Add something to separate logos (?)3
-- **Modal????(only after form is validated)
+OTHER:
+* missionary page: checkboxes customized
+* thank you: modal (?), if not modal then something to separate logos?
+* home page: flashing white on transition
+* temple: edit data on STL temple info
