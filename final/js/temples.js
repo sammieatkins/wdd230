@@ -41,7 +41,7 @@ function displayCards(item) {
     let services = document.createElement("ul");
     servicesTitle.textContent = "Services";
     services.setAttribute("class","temples_list");
-    item.closuresList.forEach(listItem => {
+    item.services.forEach(listItem => {
         handleJsonList(listItem, services);
     })
     
@@ -50,7 +50,7 @@ function displayCards(item) {
     let history = document.createElement("ul");
     historyTitle.textContent = "History";
     history.setAttribute("class","temples_list");
-    item.closuresList.forEach(listItem => {
+    item.history.forEach(listItem => {
         handleJsonList(listItem, history);
     })
 
@@ -59,7 +59,7 @@ function displayCards(item) {
     let closures = document.createElement("ul");
     closuresTitle.textContent = "Closures";
     closures.setAttribute("class","temples_list");
-    item.closuresList.forEach(listItem => {
+    item.closures.forEach(listItem => {
         handleJsonList(listItem, closures);
     })
 

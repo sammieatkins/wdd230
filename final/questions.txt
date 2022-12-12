@@ -9,7 +9,6 @@ HOME
 - How to make transition less abrupt? Where does it flash white????
 
 TEMPLES
-- No table
 - Like button
 - Add foreach functions to displayCards() function
 
