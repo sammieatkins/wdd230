@@ -28,10 +28,10 @@ function makeFooter() {
     logo.setAttribute("id", "footer_logo");
 
     // SOURCES
-    sources.innerHTML = " | Sources";
+    sources.innerHTML = "Sources";
     sources.setAttribute("href", "sources.html")
     
-    info.innerHTML = "Temple Inn & Suites | Samantha Atkins | WDD 230 | &copy; 2022";
+    info.innerHTML = "Temple Inn & Suites | Samantha Atkins | WDD 230 | &copy; 2022 | ";
 
     // CONTACT
     contact.setAttribute("id", "footer_contact")

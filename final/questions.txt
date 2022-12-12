@@ -13,7 +13,8 @@ TEMPLES
 - stl temple history wrap and closure dates (12/5 needed?)
 
 SERVICES
-- Checkboxes customized
+  MISSIONARY
+  - Checkboxes customized
   RECEPTION PAGE
   - Idea: have a link to a catering company and flower/decor company that the hotel partners with. setup: hotel employees help? maybe an employee is a wedding planner?
 

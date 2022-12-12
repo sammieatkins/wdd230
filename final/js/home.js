@@ -128,14 +128,22 @@ function displayTemple(item) {
   let div = document.getElementById("spotlight_info")
   let img = document.createElement("img");
   let name = document.createElement("h2");
-  let description = document.createElement("p");
+  let description = document.createElement("ul");
 
   img.setAttribute("src", `images/${item.img}`);
   img.setAttribute("alt", item.name);
   name.textContent = item.name;
-  description.textContent = item.history;
+  description.setAttribute("class","temples_list");
+  item.history.forEach(listItem => {
+    handleJsonList(listItem, description);
+  })
 
   div.appendChild(img);
   div.appendChild(name);
   div.appendChild(description);
+}
+function handleJsonList(item, ul) {
+  let li = document.createElement("li");
+  li.textContent = item;
+  ul.appendChild(li);
 }
