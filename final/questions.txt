@@ -3,6 +3,8 @@
 * = High Priority (more * = more important)
 
 ------- TECHNICAL -------
+ALL PAGES
+
 HOME
 - How to make transition less abrupt?
 - Dot needs to move when picture automatically move
@@ -10,6 +12,7 @@ HOME
 TEMPLES
 - No table
 - Like button
+- Add foreach functions to displayCards() function
 
 SERVICES
 - Checkboxes customized

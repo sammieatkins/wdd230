@@ -68,6 +68,7 @@ footer p {
     width: 45%;
     display: block;
     margin: 0 auto;
+    margin-top: 10px;
 }
 #footer a {
     text-decoration: none;
@@ -85,9 +86,11 @@ button {
     border: none;
     padding: 10px 20px;
     letter-spacing: .1em;
+    cursor: pointer;
 }
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 a:hover {
     color: #E0A4AF;
@@ -278,6 +281,7 @@ h2, h1 {
 .cards section ul li {
     line-height: 1.8em;
     font-size: 1.2em;
+    width: 355px;
 }
 .list_container {
     text-align: center;

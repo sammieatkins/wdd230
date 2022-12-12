@@ -34,6 +34,7 @@ async function getTemples(requestURL) {
 
 getTemples(requestURL);
 
+// separate this into other functions?
 function displayCards(item) {
     let card = document.createElement("section");
 
