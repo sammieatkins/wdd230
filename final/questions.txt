@@ -8,12 +8,13 @@ HOME
 - Dot needs to move when picture automatically move
 
 TEMPLES
-- **************** Getting closures to loop through a list
-- How to bold the name in table view (https://stackoverflow.com/questions/32531609/how-to-add-bold-text-using-javascript)
+- No table
+- Like button
 
 SERVICES
-  MISSIONARY
-  - AHHHHHHHHHHHHHHHHHHHHHHH CENTERING THE PAGE >:(
+- Checkboxes customized
+  RECEPTION PAGE
+  - Idea: have a link to a catering company and flower/decor company that the hotel partners with. setup: hotel employees help? maybe an employee is a wedding planner?
 
 // TO DO //
 (make all the pages lol)
@@ -21,12 +22,6 @@ ALL PAGES
 - Media queries
 - Add link hovers
 - Add margin-top to footer logo?
-
-TEMPLES
-- Like button
-- You may elect to have additional information shown upon clicking a card. (Maybe just on smaller views to make it less cluttered?)
-- Fix table => scrap table????
-- Media queries
 
 THANK YOU
 - Add something to separate logos (?)

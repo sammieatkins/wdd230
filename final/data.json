@@ -31,7 +31,8 @@
         "announced": "Announced: 21 February 1999",
         "groundbreaking": "Groundbreaking: 25 May 1999",
         "dedicated": "Dedicated: 6 April 2000",
-        "closures": "2022 Closures: Saturday, 24 December 2022; Saturday, 31 December 2022"
+        "closures": "2022 Closures: Saturday, 24 December 2022; Saturday, 31 December 2022",
+        "closuresList": ["Saturday, 24 December 2022","Saturday, 31 December 2022"]
       },
       {
         "name": "Nauvoo Illinois Temple",
@@ -47,7 +48,8 @@
         "announced": "Announced: 4 April 1999",
         "groundbreaking": "Groundbreaking: 24 October 1999",
         "dedicated": "Dedicated: 27 June 2002",
-        "closures": "2022 Closures: Saturday, 24 December 2022; Saturday, 31 December 2022"
+        "closures": "2022 Closures: Saturday, 24 December 2022; Saturday, 31 December 2022",
+        "closuresList": ["Saturday, 24 December 2022","Saturday, 31 December 2022"]
       },
       {
         "name": "Rexburg Idaho Temple",
@@ -63,7 +65,8 @@
         "announced": "Announced: 12 December 2003",
         "groundbreaking": "Groundbreaking: 30 July 2005",
         "dedicated": "Dedicated: 10 February 2008",
-        "closures": "2022 Closures: Saturday, 24 December 2022; Saturday, 31 December 2022"
+        "closures": "2022 Closures: Saturday, 24 December 2022; Saturday, 31 December 2022",
+        "closuresList": ["Saturday, 24 December 2022","Saturday, 31 December 2022"]
       }
     ]
   }

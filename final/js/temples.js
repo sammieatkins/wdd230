@@ -82,21 +82,16 @@ function displayCards(item) {
     dedicated.textContent = item.dedicated;
 
     closuresTitle.textContent = "Closures";
-    closures.textContent = item.closures;
+    closures.setAttribute("class","temples_list");
     img.setAttribute("src", `images/${item.img}`);
     img.setAttribute("alt", item.name);
-
-    let closuresList = item.closuresList
-    item.closuresList.forEach(listItem => {
-        handleJsonList(listItem, closures);
-    })
-
+    
     services.appendChild(clothing);
     services.appendChild(cafeteria);
     services.appendChild(housing);
     services.appendChild(distribution);
     servicesDiv.appendChild(services);
-
+    
     history.appendChild(announced);
     history.appendChild(groundbreaking);
     history.appendChild(dedicated);
@@ -104,20 +99,23 @@ function displayCards(item) {
     
     card.appendChild(name);
     card.appendChild(img);
-
+    
     card.appendChild(contact);
     card.appendChild(address);
     card.appendChild(phone);
-
+    
     card.appendChild(servicesTitle)
     card.appendChild(servicesDiv);
 
     card.appendChild(historyTitle);
     card.appendChild(historyDiv);
-
-    card.appendChild(closuresTitle);
-    card.appendChild(closuresList);
     
+    card.appendChild(closuresTitle);
+    card.appendChild(closures);
+    
+    item.closuresList.forEach(listItem => {
+        handleJsonList(listItem, closures);
+    })
     document.querySelector(".cards").appendChild(card);
 }
 
@@ -125,69 +123,4 @@ function handleJsonList(item, ul) {
     let li = document.createElement("li");
     li.textContent = item;
     ul.appendChild(li);
-    return ul;
 }
-
-// h4 and p inside the table row
-function displayTable(temple) {
-    let largeQuery = window.matchMedia("(min-width: 64em)");
-
-    // let hName = document.createElement("th");
-    // let hContact = document.createElement("th");
-    // let hServices = document.createElement("th");
-    // let hHistory = document.createElement("th");
-    // let hClosures = document.createElement("th");
-
-    let row = document.createElement("tr");
-    let templeName = document.createElement("td");
-    let address = document.createElement("td");
-    let phone = document.createElement("td");
-    let list = document.createElement("ul");
-    let history = document.createElement("p");
-    let closures = document.createElement("p");
-    if (largeQuery.matches) {
-        templeName.textContent = temple.name;
-        address.textContent = temple.address;
-        phone.textContent = temple.phone;
-        
-        history.textContent = temple.history;
-        closures.textContent = temple.closures;
-
-        row.appendChild(templeName);
-        row.appendChild(address);
-        row.appendChild(phone);  
-        row.appendChild(list);
-        row.appendChild(history);
-        row.appendChild(closures);      
-    }
-    else {
-        console.log("made it to else")
-        let templeInfo = document.createElement("td");
-        templeInfo.setAttribute("id", "temple_info");
-        templeInfo.textContent = `${temple.name}\r\n${temple.address}\r\n${temple.phone}\r\n${temple.services}\r\n${temple.history}\r\n${temple.closures}`;
-        templeInfo.setAttribute('style', 'white-space: pre;');
-        row.appendChild(templeInfo);
-    }
-    document.querySelector(".table").appendChild(row);
-}
-
-// function getServices(item) {
-//     let service = document.createElement("li");
-//     service.textContent = item;
-//     list.appendChild(service);
-// }
-
-// let services1 = document.createElement("li");
-// let services2 = document.createElement("li");
-// let services3 = document.createElement("li");
-// let services4 = document.createElement("li");
-
-// services1.textContent = temple.services[0];
-// services2.textContent = temple.services[1];
-// services3.textContent = temple.services[2];
-// services4.textContent = temple.services[3];
-
-// services.appendChild(services1);
-// services.appendChild(services2);
-// services.appendChild(services3);
-// services.appendChild(services4);

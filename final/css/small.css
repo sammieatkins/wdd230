@@ -489,11 +489,11 @@ input[type=date] {
 }
 #services main a {
     display: block;
-    text-decoration: none;
     color: #99C1B9;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5em;
     margin: 20px;
+    text-decoration: underline;
 }
 #services main a:visited {
     color: #E0A4AF;
