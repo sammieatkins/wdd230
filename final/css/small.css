@@ -237,6 +237,9 @@ a:hover {
 #temples main {
     display: block;
 }
+#temples main h1 {
+    margin-bottom: 0;
+}
 #temples main img {
     width: 90%;
 }

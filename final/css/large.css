@@ -113,9 +113,6 @@
     form {
         margin: 20px 300px;
     }
-    #submit {
-        width: 30%;
-    }
 
     /* SERVICES */
     #services main {
@@ -150,5 +147,8 @@
     #suite_types p {
         width: 455px;
         margin: 0 auto;
+    }
+    #missionary #submit {
+        width: 30%;
     }
 }
