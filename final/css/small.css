@@ -531,6 +531,19 @@ input[type=date] {
     margin-top: 20px;
 }
 
+/* RECEPTION */
+#reception main img {
+    width: 80%;
+    margin: 0 auto;
+}
+#reception main p {
+    width: 90%;
+    margin: 0 auto;
+}
+.reception_contact {
+    font-weight: bold;
+}
+
 /* MEDIA QUERY */
 @media (min-width: 960px) {
     nav {

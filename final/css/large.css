@@ -151,4 +151,19 @@
     #missionary #submit {
         width: 30%;
     }
+
+    /* RECEPTION */
+    /* catering planner florist */
+    #catering {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #planner {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #florist {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
 }

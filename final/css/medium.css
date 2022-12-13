@@ -61,4 +61,27 @@
     #missionary_contact form textarea {
         height: 107px;
     }
+
+    /* RECEPTION */
+    #reception main img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #reception main p {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #reception main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #reception main h1 {
+        grid-column: 1/4;
+    }
+    #hall {
+        grid-column: 1/4;
+    }
+    #reception main #hall img {
+        width: 93%;
+    }
 }
