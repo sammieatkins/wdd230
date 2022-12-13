@@ -401,6 +401,7 @@ select {
 input[type=date] {
     width: 325px;
     text-align: center;
+    font-size: 1em;
 }
 
 /* modal */
