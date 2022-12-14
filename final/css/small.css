@@ -64,7 +64,7 @@ footer p {
     color: black;
     text-align: center;
     background-color: #99C1B9;
-    padding: 20px;
+    padding: 5px;
     margin: 0px;
 }
 #footer_logo {
@@ -108,8 +108,12 @@ a:hover {
 /* Slideshow container */
 #reserve_button {
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     bottom: 75px;
-    left: 65px;
+    width: 80%;
 }
 #reserve_button a {
     color: #FAF5EF;
